@@ -14,7 +14,7 @@ on:
 
 jobs:
   upload-vendor:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-speed
 
     steps:
       - name: Checkout repository
@@ -23,7 +23,7 @@ jobs:
       - name: Download artifact from workflow run
         uses: actions/download-artifact@v4
         with:
-          name: vendor
+          name: infinix-X6528-vendor
           run-id: 44161760331
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: SPEEDFIRE7/android_vendor_infinix_X6528
@@ -44,64 +44,9 @@ jobs:
           cd vendor_output
           FILE=$(ls *.tar.gz *.zip *.tar 2>/dev/null | head -1)
           if [ -z "$FILE" ]; then
-            echo "No archive found, creating one..."
-            tar -czf vendor_blobs.tar.gz ./*
+            echo "No archive found, packing directory..."
+            tar -czf vendor_blobs.tar.gz $(ls -A)
             FILE="vendor_blobs.tar.gz"
           fi
           SIZE_BYTES=$(stat -c%s "$FILE")
           MAX_BYTES=$((2000 * 1024 * 1024))
-          if [ "$SIZE_BYTES" -gt "$MAX_BYTES" ]; then
-            echo "File too large, splitting..."
-            split -b 2000m "$FILE" "${FILE}.part_"
-            rm "$FILE"
-            echo "split=true" >> $GITHUB_OUTPUT
-          else
-            echo "split=false" >> $GITHUB_OUTPUT
-          fi
-          ls -lh
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.event.inputs.tag }}
-          release_name: ${{ github.event.inputs.release_name }}
-          body: |
-            ## Vendor Blobs — Infinix Hot 40i (X6528)
-
-            - **Chipset**: Unisoc T606
-            - **Size**: ${{ steps.size.outputs.size }}
-            - **Source**: Extracted from device dump
-            - **Build**: Generated via IOSPTDGEN
-
-            ### Usage
-            Extract to `vendor/infinix/X6528/` in your AOSP tree.
-
-            > If split into parts, download all parts and run:
-            > `cat vendor_blobs.tar.gz.part_* > vendor_blobs.tar.gz && tar xzf vendor_blobs.tar.gz`
-          draft: false
-          prerelease: false
-
-      - name: Upload vendor files to release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cd vendor_output
-          RELEASE_ID=${{ steps.create_release.outputs.id }}
-          UPLOAD_URL=${{ steps.create_release.outputs.upload_url }}
-          UPLOAD_URL="${UPLOAD_URL%\{*}"
-
-          for FILE in *; do
-            if [ -f "$FILE" ]; then
-              echo "Uploading $FILE..."
-              MIME="application/octet-stream"
-              curl -s \
-                -H "Authorization: token $GITHUB_TOKEN" \
-                -H "Content-Type: $MIME" \
-                --data-binary @"$FILE" \
-                "${UPLOAD_URL}?name=${FILE}&label=${FILE}" \
-                | jq -r '.browser_download_url // "Upload failed"'
-            fi
-          done
