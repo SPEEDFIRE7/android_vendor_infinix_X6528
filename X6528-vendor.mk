@@ -6,58 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6528
 
 PRODUCT_COPY_FILES += \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@7.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.1-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.primary.whale.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.whale.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libTransAgc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTransAgc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libalsa_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsa_utils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libatci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatci.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libaudiodump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodump.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libaudiomiscctl_whale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiomiscctl_whale.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libpowerhal_cli.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal_cli.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtinycompress_unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libunisocpreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunisocpreprocessing.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.power-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@7.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.1-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libatci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libatci.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libpowerhal_cli.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal_cli.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libtinycompress_unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.power-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper2.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdtsaudio.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhapticgenerator.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libsprdvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsprdvoiceprocessing.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdts-eagle-shared.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohalv7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohalv7.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper2.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdtsaudio.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhapticgenerator.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libsprdaudiohalv7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprdaudiohalv7.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
+    vendor/infinix/X6528/proprietary/odm/bin/CamDevSim:$(TARGET_COPY_OUT_ODM)/bin/CamDevSim \
+    vendor/infinix/X6528/proprietary/odm/bin/fm_tools:$(TARGET_COPY_OUT_ODM)/bin/fm_tools \
+    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_1280x720.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_1280x720.nv21 \
+    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_1920x1080.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_1920x1080.nv21 \
+    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_640x480.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_640x480.nv21 \
     vendor/infinix/X6528/proprietary/odm/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_configuration.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_policy_volumes.xml \
@@ -67,557 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/etc/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/primary_audio_policy_configuration.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/r_submix_audio_policy_configuration.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/usb_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_apm_configuration_configurable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_apm_configuration_configurable.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_criterion_types.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_criterion_types.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/bluetooth_audio_policy_configuration_disable_offload.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_disable_offload.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/sprd_audio_policy_engine_criteria.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_audio_policy_engine_criteria.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/infinix/X6528/proprietary/odm/lib/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib/libbt-vendor.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib64/libbt-vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service.unisoc \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.bluetooth.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.ums9230.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsysoffloadstream.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysoffloadstream.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.bluetooth.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.ums9230.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libsysoffloadstream.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysoffloadstream.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.broadcastradio@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.broadcastradio@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/odm/lib/hw/camera.ums9230.so:$(TARGET_COPY_OUT_ODM)/lib/hw/camera.ums9230.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libArcFilterImageEngine.so:$(TARGET_COPY_OUT_ODM)/lib/libArcFilterImageEngine.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libBokeh2Frames.so:$(TARGET_COPY_OUT_ODM)/lib/libBokeh2Frames.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libDefog.so:$(TARGET_COPY_OUT_ODM)/lib/libDefog.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libDualCam_OnliCalib.so:$(TARGET_COPY_OUT_ODM)/lib/libDualCam_OnliCalib.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libFaceDetectV3.so:$(TARGET_COPY_OUT_ODM)/lib/libFaceDetectV3.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libFaceDetectV3_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libFaceDetectV3_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libJiGanYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib/libJiGanYuvSuperNight.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libMNN.so:$(TARGET_COPY_OUT_ODM)/lib/libMNN.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSegLite.so:$(TARGET_COPY_OUT_ODM)/lib/libSegLite.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSprdGpuFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdGpuFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSprdImageFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdImageFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSprdImageFilterAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdImageFilterAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSprdMfnrAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdMfnrAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libSprdVideoHDR.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdVideoHDR.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTfliteWrapper.so:$(TARGET_COPY_OUT_ODM)/lib/libTfliteWrapper.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranASD.so:$(TARGET_COPY_OUT_ODM)/lib/libTranASD.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranArcFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libTranArcFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranArcLowLight.so:$(TARGET_COPY_OUT_ODM)/lib/libTranArcLowLight.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranExtImgProc.so:$(TARGET_COPY_OUT_ODM)/lib/libTranExtImgProc.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranExtInterface.so:$(TARGET_COPY_OUT_ODM)/lib/libTranExtInterface.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libTranFaceBeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranMorphoHDSR.so:$(TARGET_COPY_OUT_ODM)/lib/libTranMorphoHDSR.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_ODM)/lib/libTranSTSingleBlur.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTranWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib/libTranWaterMark.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTran_Log.so:$(TARGET_COPY_OUT_ODM)/lib/libTran_Log.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libTrancolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib/libTrancolorlevel.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libWT.so:$(TARGET_COPY_OUT_ODM)/lib/libWT.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libXMPCore.so:$(TARGET_COPY_OUT_ODM)/lib/libXMPCore.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libXMPFiles.so:$(TARGET_COPY_OUT_ODM)/lib/libXMPFiles.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lib_camera_frc.so:$(TARGET_COPY_OUT_ODM)/lib/lib_camera_frc.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lib_faceskinseg_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib/lib_faceskinseg_vdsp.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libae.so:$(TARGET_COPY_OUT_ODM)/lib/libae.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libae3.x.so:$(TARGET_COPY_OUT_ODM)/lib/libae3.x.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libaf3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libaf3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libaf3.2_le.so:$(TARGET_COPY_OUT_ODM)/lib/libaf3.2_le.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libaftrigger.so:$(TARGET_COPY_OUT_ODM)/lib/libaftrigger.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libalsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libalsc3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libamipengine.so:$(TARGET_COPY_OUT_ODM)/lib/libamipengine.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_night.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib/libarcsoft_beautyshot.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libatm.so:$(TARGET_COPY_OUT_ODM)/lib/libatm.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libawb.so:$(TARGET_COPY_OUT_ODM)/lib/libawb.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libawb1.so:$(TARGET_COPY_OUT_ODM)/lib/libawb1.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libawb3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libawb3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_depth.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_depth.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_depth_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_depth_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian_cap.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian_cap.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcalcsharpness.so:$(TARGET_COPY_OUT_ODM)/lib/libcalcsharpness.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamAe4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAe4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamAf4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAf4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamAlsc4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAlsc4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamAwb4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAwb4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamPcc4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamPcc4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamPd4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamPd4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib/libcam_otp_parser.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamafl4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamafl4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcambr_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libcambr_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamcommon.so:$(TARGET_COPY_OUT_ODM)/lib/libcamcommon.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamdfa.so:$(TARGET_COPY_OUT_ODM)/lib/libcamdfa.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfaceskinseg.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamfb.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfb.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamlpt.so:$(TARGET_COPY_OUT_ODM)/lib/libcamlpt.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcammem.so:$(TARGET_COPY_OUT_ODM)/lib/libcammem.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamoem.so:$(TARGET_COPY_OUT_ODM)/lib/libcamoem.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcampm_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libcampm_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcampmloader.so:$(TARGET_COPY_OUT_ODM)/lib/libcampmloader.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamppm.so:$(TARGET_COPY_OUT_ODM)/lib/libcamppm.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamps.so:$(TARGET_COPY_OUT_ODM)/lib/libcamps.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib/libcamsensor.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libceres_online.so:$(TARGET_COPY_OUT_ODM)/lib/libceres_online.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib/libcolorlevel.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libcppdrv_r6p0.so:$(TARGET_COPY_OUT_ODM)/lib/libcppdrv_r6p0.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libdeflicker.so:$(TARGET_COPY_OUT_ODM)/lib/libdeflicker.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libdfa.so:$(TARGET_COPY_OUT_ODM)/lib/libdfa.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libfacealgapi.so:$(TARGET_COPY_OUT_ODM)/lib/libfacealgapi.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libfaceanalyze_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libfaceanalyze_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib/libfaceskinseg.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libflash.so:$(TARGET_COPY_OUT_ODM)/lib/libflash.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libfrc.so:$(TARGET_COPY_OUT_ODM)/lib/libfrc.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libgesture_mnn.so:$(TARGET_COPY_OUT_ODM)/lib/libgesture_mnn.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libgtm.so:$(TARGET_COPY_OUT_ODM)/lib/libgtm.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libgyrostab.so:$(TARGET_COPY_OUT_ODM)/lib/libgyrostab.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libhdr.so:$(TARGET_COPY_OUT_ODM)/lib/libhdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libinfo.so:$(TARGET_COPY_OUT_ODM)/lib/libinfo.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libinterface.so:$(TARGET_COPY_OUT_ODM)/lib/libinterface.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libispalg.so:$(TARGET_COPY_OUT_ODM)/lib/libispalg.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libiss.so:$(TARGET_COPY_OUT_ODM)/lib/libiss.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libitdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libitdfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libkey.so:$(TARGET_COPY_OUT_ODM)/lib/libkey.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblightportrait.so:$(TARGET_COPY_OUT_ODM)/lib/liblightportrait.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblightweightpipeline.so:$(TARGET_COPY_OUT_ODM)/lib/liblightweightpipeline.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblsc.so:$(TARGET_COPY_OUT_ODM)/lib/liblsc.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwp3rdnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwpAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwpcommon.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpcommon.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwphwnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwphwnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwpparser.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpparser.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwpswnodes.dummy.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpswnodes.dummy.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwpswnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpswnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib/liblwptranpluginnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwptranpluginnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libmfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libmfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libmfnr_SD.so:$(TARGET_COPY_OUT_ODM)/lib/libmfnr_SD.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_video_stabilizer.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib/libmpbase.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libomx_MF2SF_sw_sprd.so:$(TARGET_COPY_OUT_ODM)/lib/libomx_MF2SF_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libpdalgo.so:$(TARGET_COPY_OUT_ODM)/lib/libpdalgo.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libpipelinelog.so:$(TARGET_COPY_OUT_ODM)/lib/libpipelinelog.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libpss_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libpss_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_aidepth_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_aidepth_bokeh.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_gesture_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_gesture_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_mfsr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_mfsr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_cap.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_cap.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_cap_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_cap_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_seg.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_seg.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_seg_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_seg_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_ai_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_ai_mfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_mfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_mfnr_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_mfnr_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdaic.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaic.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdaidepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaidepthadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdaifacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaifacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdaisfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaisfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdaisfnradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaisfnradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdbokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdbokeh.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdbokeh_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdbokeh_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdcamalgassist.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdcamalgassist.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdcnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdcnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprddepth.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddepth.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprddepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddepthadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprddre.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddre.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprddrepro.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddrepro.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprddreproadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddreproadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeauty_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeauty_vdsp.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeautyfdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeautyfdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfar.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfar.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfarcnn_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfarcnn_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd_hw.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd_hw.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr3.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr3.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr4.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr4.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdlsc.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdlsc.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdmd.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdmd.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdmfsradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdmfsradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdorb.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdorb.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdscenedetect.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdscenedetect.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdvideohdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdvideohdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarp.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarp.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarpadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarpadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarppro.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarppro.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libsprdwtadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwtadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib/libstblur_capture_api.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib/libtensorflowlite_c.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libtflite_native_inference.so:$(TARGET_COPY_OUT_ODM)/lib/libtflite_native_inference.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libumnn.so:$(TARGET_COPY_OUT_ODM)/lib/libumnn.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libunnengine.so:$(TARGET_COPY_OUT_ODM)/lib/libunnengine.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libverify.so:$(TARGET_COPY_OUT_ODM)/lib/libverify.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libxtm.so:$(TARGET_COPY_OUT_ODM)/lib/libxtm.so \
-    vendor/infinix/X6528/proprietary/odm/lib/libyuv420_scaler.so:$(TARGET_COPY_OUT_ODM)/lib/libyuv420_scaler.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/hw/camera.ums9230.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/camera.ums9230.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libArcFilterImageEngine.so:$(TARGET_COPY_OUT_ODM)/lib64/libArcFilterImageEngine.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libBokeh2Frames.so:$(TARGET_COPY_OUT_ODM)/lib64/libBokeh2Frames.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libDefog.so:$(TARGET_COPY_OUT_ODM)/lib64/libDefog.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libDualCam_OnliCalib.so:$(TARGET_COPY_OUT_ODM)/lib64/libDualCam_OnliCalib.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libFaceDetectV3.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDetectV3.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libFaceDetectV3_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDetectV3_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libJiGanYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib64/libJiGanYuvSuperNight.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libMNN.so:$(TARGET_COPY_OUT_ODM)/lib64/libMNN.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSegLite.so:$(TARGET_COPY_OUT_ODM)/lib64/libSegLite.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSprdGpuFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdGpuFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSprdImageFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdImageFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSprdImageFilterAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdImageFilterAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSprdMfnrAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdMfnrAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libSprdVideoHDR.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdVideoHDR.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTfliteWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libTfliteWrapper.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranASD.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranASD.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranArcFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranArcFilter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranArcLowLight.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranArcLowLight.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranExtImgProc.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranExtImgProc.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranExtInterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranExtInterface.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranFaceBeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranMorphoHDSR.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranMorphoHDSR.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranSTSingleBlur.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTranWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranWaterMark.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTran_Log.so:$(TARGET_COPY_OUT_ODM)/lib64/libTran_Log.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libTrancolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib64/libTrancolorlevel.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libWT.so:$(TARGET_COPY_OUT_ODM)/lib64/libWT.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libXMPCore.so:$(TARGET_COPY_OUT_ODM)/lib64/libXMPCore.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libXMPFiles.so:$(TARGET_COPY_OUT_ODM)/lib64/libXMPFiles.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lib_camera_frc.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_camera_frc.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lib_faceskinseg_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_faceskinseg_vdsp.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libae.so:$(TARGET_COPY_OUT_ODM)/lib64/libae.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libae3.x.so:$(TARGET_COPY_OUT_ODM)/lib64/libae3.x.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libaf3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libaf3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libaf3.2_le.so:$(TARGET_COPY_OUT_ODM)/lib64/libaf3.2_le.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libaftrigger.so:$(TARGET_COPY_OUT_ODM)/lib64/libaftrigger.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libalsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libalsc3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libamipengine.so:$(TARGET_COPY_OUT_ODM)/lib64/libamipengine.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_night.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_beautyshot.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libatm.so:$(TARGET_COPY_OUT_ODM)/lib64/libatm.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libawb.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libawb1.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb1.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libawb3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb3.2.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_depth.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_depth.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_depth_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_depth_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian_cap.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian_cap.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcalcsharpness.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalcsharpness.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamAe4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAe4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamAf4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAf4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamAlsc4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAlsc4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamAwb4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAwb4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamPcc4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamPcc4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamPd4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamPd4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib64/libcam_otp_parser.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamafl4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamafl4.0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcambr_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libcambr_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamcommon.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamcommon.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamdfa.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamdfa.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfaceskinseg.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamfb.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfb.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamlpt.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamlpt.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcammem.so:$(TARGET_COPY_OUT_ODM)/lib64/libcammem.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamoem.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamoem.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcampm_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libcampm_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcampmloader.so:$(TARGET_COPY_OUT_ODM)/lib64/libcampmloader.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamppm.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamppm.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamps.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamps.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamsensor.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libceres_online.so:$(TARGET_COPY_OUT_ODM)/lib64/libceres_online.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib64/libcolorlevel.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libcppdrv_r6p0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcppdrv_r6p0.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libdeflicker.so:$(TARGET_COPY_OUT_ODM)/lib64/libdeflicker.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libdfa.so:$(TARGET_COPY_OUT_ODM)/lib64/libdfa.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libfacealgapi.so:$(TARGET_COPY_OUT_ODM)/lib64/libfacealgapi.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libfaceanalyze_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libfaceanalyze_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib64/libfaceskinseg.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libflash.so:$(TARGET_COPY_OUT_ODM)/lib64/libflash.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libfrc.so:$(TARGET_COPY_OUT_ODM)/lib64/libfrc.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libgesture_mnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libgesture_mnn.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libgtm.so:$(TARGET_COPY_OUT_ODM)/lib64/libgtm.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libgyrostab.so:$(TARGET_COPY_OUT_ODM)/lib64/libgyrostab.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libhdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libhdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libinfo.so:$(TARGET_COPY_OUT_ODM)/lib64/libinfo.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libinterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libinterface.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libispalg.so:$(TARGET_COPY_OUT_ODM)/lib64/libispalg.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libiss.so:$(TARGET_COPY_OUT_ODM)/lib64/libiss.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libitdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libitdfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libkey.so:$(TARGET_COPY_OUT_ODM)/lib64/libkey.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblightportrait.so:$(TARGET_COPY_OUT_ODM)/lib64/liblightportrait.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblightweightpipeline.so:$(TARGET_COPY_OUT_ODM)/lib64/liblightweightpipeline.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblsc.so:$(TARGET_COPY_OUT_ODM)/lib64/liblsc.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwp3rdnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwpAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpAdapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwpcommon.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpcommon.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwphwnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwphwnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwpparser.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpparser.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwpswnodes.dummy.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpswnodes.dummy.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwpswnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpswnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/liblwptranpluginnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwptranpluginnodes.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libmfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libmfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libmfnr_SD.so:$(TARGET_COPY_OUT_ODM)/lib64/libmfnr_SD.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_video_stabilizer.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libomx_MF2SF_sw_sprd.so:$(TARGET_COPY_OUT_ODM)/lib64/libomx_MF2SF_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libpdalgo.so:$(TARGET_COPY_OUT_ODM)/lib64/libpdalgo.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libpipelinelog.so:$(TARGET_COPY_OUT_ODM)/lib64/libpipelinelog.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libpss_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libpss_isp2.7.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_aidepth_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_aidepth_bokeh.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_gesture_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_gesture_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_mfsr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_mfsr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_cap.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_cap.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_cap_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_cap_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_seg.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_seg.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_seg_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_seg_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_ai_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_ai_mfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_mfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_mfnr_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_mfnr_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaic.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaic.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaidepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaidepthadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaifacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaifacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaisfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaisfnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaisfnradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaisfnradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdbokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdbokeh.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdbokeh_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdbokeh_adapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdcamalgassist.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdcamalgassist.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdcnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdcnr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprddepth.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddepth.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprddepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddepthadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprddre.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddre.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprddrepro.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddrepro.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprddreproadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddreproadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeauty.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeauty_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeauty_vdsp.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeautyfdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeautyfdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfar.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfar.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfarcnn_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfarcnn_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd_SDK.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd_hw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd_hw.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr3.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr4.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr4.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdlsc.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdlsc.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdmd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdmd.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdmfsradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdmfsradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdorb.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdorb.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdscenedetect.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdscenedetect.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdvideohdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdvideohdradapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarp.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarpadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarpadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarppro.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarppro.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwtadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwtadapter.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_capture_api.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib64/libtensorflowlite_c.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libtflite_native_inference.so:$(TARGET_COPY_OUT_ODM)/lib64/libtflite_native_inference.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libumnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libumnn.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libunnengine.so:$(TARGET_COPY_OUT_ODM)/lib64/libunnengine.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libverify.so:$(TARGET_COPY_OUT_ODM)/lib64/libverify.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libxtm.so:$(TARGET_COPY_OUT_ODM)/lib64/libxtm.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/libyuv420_scaler.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuv420_scaler.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.2-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.3-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.4-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.4-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.5-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.5-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.6-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.6-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_shot.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.2-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.3-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.4-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.4-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.5-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.5-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.6-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl-sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_shot.so \
-    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_1280x720.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_1280x720.nv21 \
-    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_1920x1080.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_1920x1080.nv21 \
-    vendor/infinix/X6528/proprietary/odm/camera/watermark/watermark_640x480.nv21:$(TARGET_COPY_OUT_ODM)/camera/watermark/watermark_640x480.nv21 \
-    vendor/infinix/X6528/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt \
-    vendor/infinix/X6528/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/hwcomposer.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.ums9230.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahdrtosdrtransform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libmemion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemion.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.enhance-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.enhance-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/hwcomposer.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.ums9230.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediahdrtosdrtransform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libmemion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemion.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.enhance-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.enhance-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libwvaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvaidl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.silead.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrusty.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrusty.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service.trusty \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.1-unisoc-service \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_common.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_store.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_hdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_hdcp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_soft_mjpgdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mjpgdec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_common.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_store.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefright_hdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_hdcp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
-    vendor/infinix/X6528/proprietary/odm/etc/media_codecs_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_c2_secure.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/media_codecs_performance_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_performance_c2_secure.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.power.stats-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.stats-service.example \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
-    vendor/infinix/X6528/proprietary/system_ext/etc/init/dataLogDaemon.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dataLogDaemon.rc \
-    vendor/infinix/X6528/proprietary/system_ext/etc/init/data_rps.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/data_rps.rc \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/urild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/urild \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/unisoc.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unisoc.rild.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/librilcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilcore.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.data-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.ims-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.ims-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.messaging-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.network-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.sim-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.voice-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/librilcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilcore.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.data-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.ims-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.ims-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.messaging-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.network-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.sim-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/system_ext/priv-app/ims/ims.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/ims.apk \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.rebootescrow-service.default:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.rebootescrow-service.default \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_android_keymaster_keymint_utils.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libkeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymint.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/MemsicAlgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/MemsicAlgo.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsensorlistcfg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistcfg.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/MemsicAlgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/MemsicAlgo.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libsensorlistcfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistcfg.so \
-    vendor/infinix/X6528/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/infinix/X6528/proprietary/system_ext/app/SoterService/SoterService.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/SoterService/SoterService.apk \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/thermal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/thermal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.default.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.usb-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-service.example \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.usb-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.example.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
-    vendor/infinix/X6528/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
-    vendor/infinix/X6528/proprietary/vendor/lib/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
-    vendor/infinix/X6528/proprietary/vendor/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/infinix/X6528/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    vendor/infinix/X6528/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/infinix/X6528/proprietary/odm/bin/CamDevSim:$(TARGET_COPY_OUT_ODM)/bin/CamDevSim \
-    vendor/infinix/X6528/proprietary/odm/bin/fm_tools:$(TARGET_COPY_OUT_ODM)/bin/fm_tools \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_pga.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_process.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_structure.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audioparam_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audioparam_config.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/codec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/codec.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/cvs.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/dsp_vbc.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_pga.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_process.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/audio_structure.xml \
@@ -626,9 +28,22 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/cvs.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/dsp_smartamp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/dsp_smartamp.xml \
     vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/dsp_vbc.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_pga.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_pga.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_process.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_process.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audio_structure.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audio_structure.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/audioparam_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/audioparam_config.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/codec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/codec.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/cvs.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/cvs.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_params/sprd/version1/dsp_vbc.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_params/sprd/version1/dsp_vbc.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_pcm.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_pcm.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/audio_route.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_route.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_1.txt \
+    vendor/infinix/X6528/proprietary/odm/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/3rdpool/samplenode/tuning/sample_tuning_2.txt \
+    vendor/infinix/X6528/proprietary/odm/etc/doubleloss_large.model:$(TARGET_COPY_OUT_ODM)/etc/doubleloss_large.model \
     vendor/infinix/X6528/proprietary/odm/etc/init/wcn.rc:$(TARGET_COPY_OUT_ODM)/etc/init/wcn.rc \
     vendor/infinix/X6528/proprietary/odm/etc/isppipeline/Pipeline_Linkage.json:$(TARGET_COPY_OUT_ODM)/etc/isppipeline/Pipeline_Linkage.json \
     vendor/infinix/X6528/proprietary/odm/etc/isppipeline/props.xml:$(TARGET_COPY_OUT_ODM)/etc/isppipeline/props.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/license_debug.lic:$(TARGET_COPY_OUT_ODM)/etc/license_debug.lic \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/common/DefaultNodeList.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/common/DefaultNodeList.json \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_App_Yuv_Capture.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_App_Yuv_Capture.json \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/pipeline/Pipeline_Async.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/pipeline/Pipeline_Async.json \
@@ -703,9 +118,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/session/Session_ThirdParty.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_ThirdParty.json \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/session/Session_Ultrawide.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_Ultrawide.json \
     vendor/infinix/X6528/proprietary/odm/etc/lwp/Topology/session/Session_Ultrawide_Video.json:$(TARGET_COPY_OUT_ODM)/etc/lwp/Topology/session/Session_Ultrawide_Video.json \
+    vendor/infinix/X6528/proprietary/odm/etc/media_codecs_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_c2_secure.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/media_codecs_performance_c2_secure.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_performance_c2_secure.xml \
     vendor/infinix/X6528/proprietary/odm/etc/megyuvsupernight/anc_night_model:$(TARGET_COPY_OUT_ODM)/etc/megyuvsupernight/anc_night_model \
     vendor/infinix/X6528/proprietary/odm/etc/megyuvsupernight/anc_night_params.bin:$(TARGET_COPY_OUT_ODM)/etc/megyuvsupernight/anc_night_params.bin \
     vendor/infinix/X6528/proprietary/odm/etc/megyuvsupernight/anc_night_params.json:$(TARGET_COPY_OUT_ODM)/etc/megyuvsupernight/anc_night_params.json \
+    vendor/infinix/X6528/proprietary/odm/etc/morpho_hdsr_params.xml:$(TARGET_COPY_OUT_ODM)/etc/morpho_hdsr_params.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/morpho_hdsr_tuning_params.xml:$(TARGET_COPY_OUT_ODM)/etc/morpho_hdsr_tuning_params.xml \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/input_parameters_values.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/input_parameters_values.txt \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/obj_disc.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/obj_disc.txt \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/otpgoldendata.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/otpgoldendata.txt \
@@ -715,16 +134,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/sell_aft_cali.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/sell_aft_cali.txt \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/spw_input_parameters_values.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/spw_input_parameters_values.txt \
     vendor/infinix/X6528/proprietary/odm/etc/otpdata/spw_input_parameters_values_planar.txt:$(TARGET_COPY_OUT_ODM)/etc/otpdata/spw_input_parameters_values_planar.txt \
-    vendor/infinix/X6528/proprietary/odm/etc/unipnp/UniFeature.xml:$(TARGET_COPY_OUT_ODM)/etc/unipnp/UniFeature.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/vintf/manifest/manifest_kernel.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_kernel.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_pcm.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_pcm.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/audio_route.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_route.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/doubleloss_large.model:$(TARGET_COPY_OUT_ODM)/etc/doubleloss_large.model \
-    vendor/infinix/X6528/proprietary/odm/etc/license_debug.lic:$(TARGET_COPY_OUT_ODM)/etc/license_debug.lic \
-    vendor/infinix/X6528/proprietary/odm/etc/morpho_hdsr_params.xml:$(TARGET_COPY_OUT_ODM)/etc/morpho_hdsr_params.xml \
-    vendor/infinix/X6528/proprietary/odm/etc/morpho_hdsr_tuning_params.xml:$(TARGET_COPY_OUT_ODM)/etc/morpho_hdsr_tuning_params.xml \
     vendor/infinix/X6528/proprietary/odm/etc/scene.mnn:$(TARGET_COPY_OUT_ODM)/etc/scene.mnn \
     vendor/infinix/X6528/proprietary/odm/etc/sensor_config.xml:$(TARGET_COPY_OUT_ODM)/etc/sensor_config.xml \
+    vendor/infinix/X6528/proprietary/odm/etc/unipnp/UniFeature.xml:$(TARGET_COPY_OUT_ODM)/etc/unipnp/UniFeature.xml \
     vendor/infinix/X6528/proprietary/odm/etc/zoom_config.json:$(TARGET_COPY_OUT_ODM)/etc/zoom_config.json \
     vendor/infinix/X6528/proprietary/odm/firmware/bt_configure_pskey.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_pskey.ini \
     vendor/infinix/X6528/proprietary/odm/firmware/bt_configure_rf.ini:$(TARGET_COPY_OUT_ODM)/firmware/bt_configure_rf.ini \
@@ -733,28 +145,92 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/firmware/gnssmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/gnssmodem.bin \
     vendor/infinix/X6528/proprietary/odm/firmware/wcnmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/wcnmodem.bin \
     vendor/infinix/X6528/proprietary/odm/firmware/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/wifi_board_config.ini \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamMFPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamMFPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamMRPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamMRPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamNZ.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamNZ.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamPTC.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamPTC.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFBSP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFBSP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSRPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSRPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib/npidevice/autotestfm.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/autotestfm.so \
-    vendor/infinix/X6528/proprietary/odm/lib/npidevice/libfm-sprd_eut.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/libfm-sprd_eut.so \
+    vendor/infinix/X6528/proprietary/odm/lib/hw/camera.ums9230.so:$(TARGET_COPY_OUT_ODM)/lib/hw/camera.ums9230.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libArcFilterImageEngine.so:$(TARGET_COPY_OUT_ODM)/lib/libArcFilterImageEngine.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libBokeh2Frames.so:$(TARGET_COPY_OUT_ODM)/lib/libBokeh2Frames.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libDefog.so:$(TARGET_COPY_OUT_ODM)/lib/libDefog.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libDualCam_OnliCalib.so:$(TARGET_COPY_OUT_ODM)/lib/libDualCam_OnliCalib.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libFaceDetectV3.so:$(TARGET_COPY_OUT_ODM)/lib/libFaceDetectV3.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libFaceDetectV3_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libFaceDetectV3_SDK.so \
     vendor/infinix/X6528/proprietary/odm/lib/libFy-3A-Core.so:$(TARGET_COPY_OUT_ODM)/lib/libFy-3A-Core.so \
     vendor/infinix/X6528/proprietary/odm/lib/libFy-3A-Param-gc32e1_1856.so:$(TARGET_COPY_OUT_ODM)/lib/libFy-3A-Param-gc32e1_1856.so \
     vendor/infinix/X6528/proprietary/odm/lib/libFy-3A-Param-hi5022q_1859.so:$(TARGET_COPY_OUT_ODM)/lib/libFy-3A-Param-hi5022q_1859.so \
     vendor/infinix/X6528/proprietary/odm/lib/libFy-3A-Param.so:$(TARGET_COPY_OUT_ODM)/lib/libFy-3A-Param.so \
     vendor/infinix/X6528/proprietary/odm/lib/libGCore4Cell.so:$(TARGET_COPY_OUT_ODM)/lib/libGCore4Cell.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libJiGanYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib/libJiGanYuvSuperNight.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libMNN.so:$(TARGET_COPY_OUT_ODM)/lib/libMNN.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSegLite.so:$(TARGET_COPY_OUT_ODM)/lib/libSegLite.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSprdGpuFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdGpuFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSprdImageFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdImageFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSprdImageFilterAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdImageFilterAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSprdMfnrAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdMfnrAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libSprdVideoHDR.so:$(TARGET_COPY_OUT_ODM)/lib/libSprdVideoHDR.so \
     vendor/infinix/X6528/proprietary/odm/lib/libStPortraitRepair.so:$(TARGET_COPY_OUT_ODM)/lib/libStPortraitRepair.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTfliteWrapper.so:$(TARGET_COPY_OUT_ODM)/lib/libTfliteWrapper.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranASD.so:$(TARGET_COPY_OUT_ODM)/lib/libTranASD.so \
     vendor/infinix/X6528/proprietary/odm/lib/libTranAiDetect.so:$(TARGET_COPY_OUT_ODM)/lib/libTranAiDetect.so \
     vendor/infinix/X6528/proprietary/odm/lib/libTranArcFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libTranArcFaceBeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranArcFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libTranArcFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranArcLowLight.so:$(TARGET_COPY_OUT_ODM)/lib/libTranArcLowLight.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranExtImgProc.so:$(TARGET_COPY_OUT_ODM)/lib/libTranExtImgProc.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranExtInterface.so:$(TARGET_COPY_OUT_ODM)/lib/libTranExtInterface.so \
     vendor/infinix/X6528/proprietary/odm/lib/libTranFaceAttrDetect.so:$(TARGET_COPY_OUT_ODM)/lib/libTranFaceAttrDetect.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libTranFaceBeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranMorphoHDSR.so:$(TARGET_COPY_OUT_ODM)/lib/libTranMorphoHDSR.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_ODM)/lib/libTranSTSingleBlur.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTranWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib/libTranWaterMark.so \
     vendor/infinix/X6528/proprietary/odm/lib/libTranYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib/libTranYuvSuperNight.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTran_Log.so:$(TARGET_COPY_OUT_ODM)/lib/libTran_Log.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libTrancolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib/libTrancolorlevel.so \
     vendor/infinix/X6528/proprietary/odm/lib/libTrancover.so:$(TARGET_COPY_OUT_ODM)/lib/libTrancover.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libWT.so:$(TARGET_COPY_OUT_ODM)/lib/libWT.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libXMPCore.so:$(TARGET_COPY_OUT_ODM)/lib/libXMPCore.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libXMPFiles.so:$(TARGET_COPY_OUT_ODM)/lib/libXMPFiles.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lib_camera_frc.so:$(TARGET_COPY_OUT_ODM)/lib/lib_camera_frc.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lib_faceskinseg_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib/lib_faceskinseg_vdsp.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libae.so:$(TARGET_COPY_OUT_ODM)/lib/libae.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libae3.x.so:$(TARGET_COPY_OUT_ODM)/lib/libae3.x.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libaf3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libaf3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libaf3.2_le.so:$(TARGET_COPY_OUT_ODM)/lib/libaf3.2_le.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libaftrigger.so:$(TARGET_COPY_OUT_ODM)/lib/libaftrigger.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libalsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libalsc3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libamipengine.so:$(TARGET_COPY_OUT_ODM)/lib/libamipengine.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_night.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib/libarcsoft_beautyshot.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libatm.so:$(TARGET_COPY_OUT_ODM)/lib/libatm.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libawb.so:$(TARGET_COPY_OUT_ODM)/lib/libawb.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libawb1.so:$(TARGET_COPY_OUT_ODM)/lib/libawb1.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libawb3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libawb3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_depth.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_depth.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_depth_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_depth_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbokeh_gaussian_cap.so:$(TARGET_COPY_OUT_ODM)/lib/libbokeh_gaussian_cap.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib/libbt-vendor.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcalcsharpness.so:$(TARGET_COPY_OUT_ODM)/lib/libcalcsharpness.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamAe4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAe4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamAf4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAf4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamAlsc4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAlsc4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamAwb4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamAwb4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamPcc4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamPcc4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamPd4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamPd4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib/libcam_otp_parser.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamafl4.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcamafl4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcambr_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libcambr_isp2.7.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcamcalitest.so:$(TARGET_COPY_OUT_ODM)/lib/libcamcalitest.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamcommon.so:$(TARGET_COPY_OUT_ODM)/lib/libcamcommon.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamdfa.so:$(TARGET_COPY_OUT_ODM)/lib/libcamdfa.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfaceskinseg.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamfb.so:$(TARGET_COPY_OUT_ODM)/lib/libcamfb.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamlpt.so:$(TARGET_COPY_OUT_ODM)/lib/libcamlpt.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcammem.so:$(TARGET_COPY_OUT_ODM)/lib/libcammem.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamoem.so:$(TARGET_COPY_OUT_ODM)/lib/libcamoem.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcampm_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libcampm_isp2.7.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcampmloader.so:$(TARGET_COPY_OUT_ODM)/lib/libcampmloader.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamppm.so:$(TARGET_COPY_OUT_ODM)/lib/libcamppm.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamps.so:$(TARGET_COPY_OUT_ODM)/lib/libcamps.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib/libcamsensor.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_a13_alsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_a13_alsc3.2.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_if_ae3.x.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_if_ae3.x.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_if_awb4.0_v1.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_if_awb4.0_v1.0.so \
@@ -773,12 +249,48 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_ion_v1.0.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_ion_v1.0.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_oem_ums9230_13.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_oem_ums9230_13.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcds_register.so:$(TARGET_COPY_OUT_ODM)/lib/libcds_register.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libceres_online.so:$(TARGET_COPY_OUT_ODM)/lib/libceres_online.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcodec2_unisoc_avcdec_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_unisoc_avcdec_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcodec2_unisoc_avcenc_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_unisoc_avcenc_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcodec2_unisoc_hevcdec_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_unisoc_hevcdec_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib/libcodec2_unisoc_vp9dec_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libcodec2_unisoc_vp9dec_secure.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib/libcolorlevel.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libcppdrv_r6p0.so:$(TARGET_COPY_OUT_ODM)/lib/libcppdrv_r6p0.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libdeflicker.so:$(TARGET_COPY_OUT_ODM)/lib/libdeflicker.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libdfa.so:$(TARGET_COPY_OUT_ODM)/lib/libdfa.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libfacealgapi.so:$(TARGET_COPY_OUT_ODM)/lib/libfacealgapi.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libfaceanalyze_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libfaceanalyze_SDK.so \
     vendor/infinix/X6528/proprietary/odm/lib/libfacesattribute.so:$(TARGET_COPY_OUT_ODM)/lib/libfacesattribute.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib/libfaceskinseg.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libflash.so:$(TARGET_COPY_OUT_ODM)/lib/libflash.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libfrc.so:$(TARGET_COPY_OUT_ODM)/lib/libfrc.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libgesture_mnn.so:$(TARGET_COPY_OUT_ODM)/lib/libgesture_mnn.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libgtm.so:$(TARGET_COPY_OUT_ODM)/lib/libgtm.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libgyrostab.so:$(TARGET_COPY_OUT_ODM)/lib/libgyrostab.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libhdr.so:$(TARGET_COPY_OUT_ODM)/lib/libhdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libinfo.so:$(TARGET_COPY_OUT_ODM)/lib/libinfo.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libinterface.so:$(TARGET_COPY_OUT_ODM)/lib/libinterface.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libispalg.so:$(TARGET_COPY_OUT_ODM)/lib/libispalg.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libiss.so:$(TARGET_COPY_OUT_ODM)/lib/libiss.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libitdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libitdfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libkey.so:$(TARGET_COPY_OUT_ODM)/lib/libkey.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblightportrait.so:$(TARGET_COPY_OUT_ODM)/lib/liblightportrait.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblightweightpipeline.so:$(TARGET_COPY_OUT_ODM)/lib/liblightweightpipeline.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblsc.so:$(TARGET_COPY_OUT_ODM)/lib/liblsc.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwp3rdnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwpAdapter.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwpcommon.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpcommon.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwphwnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwphwnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwpparser.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpparser.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwpswnodes.dummy.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpswnodes.dummy.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwpswnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwpswnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib/liblwptranpluginnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwptranpluginnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libmfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libmfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libmfnr_SD.so:$(TARGET_COPY_OUT_ODM)/lib/libmfnr_SD.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_video_stabilizer.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib/libmpbase.so \
     vendor/infinix/X6528/proprietary/odm/lib/libmulticam.so:$(TARGET_COPY_OUT_ODM)/lib/libmulticam.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libomx_MF2SF_sw_sprd.so:$(TARGET_COPY_OUT_ODM)/lib/libomx_MF2SF_sw_sprd.so \
     vendor/infinix/X6528/proprietary/odm/lib/libomx_avcdec_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libomx_avcdec_hw_sprd_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib/libomx_avcenc_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libomx_avcenc_hw_sprd_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib/libomx_hevcdec_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib/libomx_hevcdec_hw_sprd_secure.so \
@@ -801,6 +313,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib/libotp_s5k5e8yx_jd.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5k5e8yx_jd.so \
     vendor/infinix/X6528/proprietary/odm/lib/libotp_s5kgd2_otp.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5kgd2_otp.so \
     vendor/infinix/X6528/proprietary/odm/lib/libotp_s5kjn1_otp.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5kjn1_otp.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libpdalgo.so:$(TARGET_COPY_OUT_ODM)/lib/libpdalgo.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libpipelinelog.so:$(TARGET_COPY_OUT_ODM)/lib/libpipelinelog.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libpss_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib/libpss_isp2.7.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsample.so:$(TARGET_COPY_OUT_ODM)/lib/libsample.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsensor_fakeserial.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_fakeserial.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsensor_fakeserial_sec.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_fakeserial_sec.so \
@@ -886,13 +401,67 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib/libsensor_virtual_sensor.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_virtual_sensor.so \
     vendor/infinix/X6528/proprietary/odm/lib/libskhynix_q2b_3231Q_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libskhynix_q2b_3231Q_shared.so \
     vendor/infinix/X6528/proprietary/odm/lib/libskhynix_q2b_5022Q_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libskhynix_q2b_5022Q_shared.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_aidepth_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_aidepth_bokeh.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsprd_fcell_gc32e1.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_fcell_gc32e1.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsprd_fcell_hi3231q.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_fcell_hi3231q.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsprd_fcell_hi5022q.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_fcell_hi5022q.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_gesture_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_gesture_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_mfsr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_mfsr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_cap.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_cap.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_cap_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_cap_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_seg.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_seg.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_portrait_seg_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_portrait_seg_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_ai_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_ai_mfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_mfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprd_raw_mfnr_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprd_raw_mfnr_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdaic.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaic.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdaidepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaidepthadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdaifacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaifacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdaisfnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaisfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdaisfnradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdaisfnradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdbokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdbokeh.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdbokeh_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdbokeh_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdcamalgassist.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdcamalgassist.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdcnr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdcnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprddepth.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddepth.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprddepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddepthadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprddre.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddre.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprddrepro.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddrepro.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprddreproadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprddreproadapter.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsprdee.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdee.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsprdee_adapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdee_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeauty_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeauty_vdsp.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfacebeautyfdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfacebeautyfdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfar.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfar.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfarcnn_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfarcnn_SDK.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd_SDK.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd_SDK.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfd_hw.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfd_hw.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdfdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdfdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr3.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr3.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdr4.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdr4.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdhdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdhdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdlsc.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdlsc.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdmd.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdmd.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdmfsradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdmfsradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdorb.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdorb.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdscenedetect.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdscenedetect.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdvideohdradapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdvideohdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarp.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarp.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarpadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarpadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdwarppro.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwarppro.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libsprdwtadapter.so:$(TARGET_COPY_OUT_ODM)/lib/libsprdwtadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib/libstblur_capture_api.so \
     vendor/infinix/X6528/proprietary/odm/lib/libsuper_night.so:$(TARGET_COPY_OUT_ODM)/lib/libsuper_night.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib/libtensorflowlite_c.so \
     vendor/infinix/X6528/proprietary/odm/lib/libtflite_native_gainference.so:$(TARGET_COPY_OUT_ODM)/lib/libtflite_native_gainference.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libtflite_native_inference.so:$(TARGET_COPY_OUT_ODM)/lib/libtflite_native_inference.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libumnn.so:$(TARGET_COPY_OUT_ODM)/lib/libumnn.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libunnengine.so:$(TARGET_COPY_OUT_ODM)/lib/libunnengine.so \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_cn398a.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_cn398a.so \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_dw9714.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9714.so \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_dw9714p.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9714p.so \
@@ -910,24 +479,103 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_lc898219.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_lc898219.so \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_lc898229.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_lc898229.so \
     vendor/infinix/X6528/proprietary/odm/lib/libvcm_zc524.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_zc524.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamMFPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamMFPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamMRPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamMRPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamNZ.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamNZ.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamPTC.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamPTC.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFBSP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFBSP.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFP.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFPP.so \
-    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSRPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSRPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libverify.so:$(TARGET_COPY_OUT_ODM)/lib/libverify.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libxtm.so:$(TARGET_COPY_OUT_ODM)/lib/libxtm.so \
+    vendor/infinix/X6528/proprietary/odm/lib/libyuv420_scaler.so:$(TARGET_COPY_OUT_ODM)/lib/libyuv420_scaler.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamMFPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamMFPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamMRPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamMRPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamNZ.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamNZ.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamPTC.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamPTC.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFBSP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFBSP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSFPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSFPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/lwpPolicy/libcamSRPP.so:$(TARGET_COPY_OUT_ODM)/lib/lwpPolicy/libcamSRPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib/npidevice/autotestfm.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/autotestfm.so \
+    vendor/infinix/X6528/proprietary/odm/lib/npidevice/libfm-sprd_eut.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/libfm-sprd_eut.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/hw/camera.ums9230.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/camera.ums9230.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libArcFilterImageEngine.so:$(TARGET_COPY_OUT_ODM)/lib64/libArcFilterImageEngine.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libBokeh2Frames.so:$(TARGET_COPY_OUT_ODM)/lib64/libBokeh2Frames.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libDefog.so:$(TARGET_COPY_OUT_ODM)/lib64/libDefog.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libDualCam_OnliCalib.so:$(TARGET_COPY_OUT_ODM)/lib64/libDualCam_OnliCalib.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libFaceDetectV3.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDetectV3.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libFaceDetectV3_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDetectV3_SDK.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libFy-3A-Core.so:$(TARGET_COPY_OUT_ODM)/lib64/libFy-3A-Core.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libFy-3A-Param.so:$(TARGET_COPY_OUT_ODM)/lib64/libFy-3A-Param.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libGCore4Cell.so:$(TARGET_COPY_OUT_ODM)/lib64/libGCore4Cell.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libJiGanYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib64/libJiGanYuvSuperNight.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libMNN.so:$(TARGET_COPY_OUT_ODM)/lib64/libMNN.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSegLite.so:$(TARGET_COPY_OUT_ODM)/lib64/libSegLite.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSprdGpuFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdGpuFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSprdImageFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdImageFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSprdImageFilterAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdImageFilterAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSprdMfnrAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdMfnrAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libSprdVideoHDR.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprdVideoHDR.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libStPortraitRepair.so:$(TARGET_COPY_OUT_ODM)/lib64/libStPortraitRepair.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTfliteWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libTfliteWrapper.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranASD.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranASD.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libTranAiDetect.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranAiDetect.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libTranArcFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranArcFaceBeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranArcFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranArcFilter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranArcLowLight.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranArcLowLight.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranExtImgProc.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranExtImgProc.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranExtInterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranExtInterface.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libTranFaceAttrDetect.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranFaceAttrDetect.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranFaceBeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranFaceBeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranMorphoHDSR.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranMorphoHDSR.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranSTSingleBlur.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTranWaterMark.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranWaterMark.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libTranYuvSuperNight.so:$(TARGET_COPY_OUT_ODM)/lib64/libTranYuvSuperNight.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTran_Log.so:$(TARGET_COPY_OUT_ODM)/lib64/libTran_Log.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libTrancolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib64/libTrancolorlevel.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libTrancover.so:$(TARGET_COPY_OUT_ODM)/lib64/libTrancover.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libWT.so:$(TARGET_COPY_OUT_ODM)/lib64/libWT.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libXMPCore.so:$(TARGET_COPY_OUT_ODM)/lib64/libXMPCore.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libXMPFiles.so:$(TARGET_COPY_OUT_ODM)/lib64/libXMPFiles.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lib_camera_frc.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_camera_frc.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lib_faceskinseg_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib64/lib_faceskinseg_vdsp.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libae.so:$(TARGET_COPY_OUT_ODM)/lib64/libae.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libae3.x.so:$(TARGET_COPY_OUT_ODM)/lib64/libae3.x.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libaf3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libaf3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libaf3.2_le.so:$(TARGET_COPY_OUT_ODM)/lib64/libaf3.2_le.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libaftrigger.so:$(TARGET_COPY_OUT_ODM)/lib64/libaftrigger.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libalsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libalsc3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libamipengine.so:$(TARGET_COPY_OUT_ODM)/lib64/libamipengine.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_night.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_beautyshot.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libatm.so:$(TARGET_COPY_OUT_ODM)/lib64/libatm.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libawb.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libawb1.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb1.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libawb3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libawb3.2.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_depth.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_depth.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_depth_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_depth_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbokeh_gaussian_cap.so:$(TARGET_COPY_OUT_ODM)/lib64/libbokeh_gaussian_cap.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib64/libbt-vendor.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcalcsharpness.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalcsharpness.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamAe4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAe4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamAf4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAf4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamAlsc4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAlsc4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamAwb4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamAwb4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamPcc4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamPcc4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamPd4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamPd4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib64/libcam_otp_parser.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamafl4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamafl4.0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcambr_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libcambr_isp2.7.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcamcalitest.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamcalitest.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamcommon.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamcommon.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamdfa.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamdfa.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfaceskinseg.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamfb.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamfb.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamlpt.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamlpt.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcammem.so:$(TARGET_COPY_OUT_ODM)/lib64/libcammem.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamoem.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamoem.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcampm_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libcampm_isp2.7.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcampmloader.so:$(TARGET_COPY_OUT_ODM)/lib64/libcampmloader.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamppm.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamppm.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamps.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamps.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamsensor.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_a13_alsc3.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_a13_alsc3.2.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_if_ae3.x.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_if_ae3.x.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_if_awb4.0_v1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_if_awb4.0_v1.0.so \
@@ -946,8 +594,44 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_ion_v1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_ion_v1.0.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_oem_ums9230_13.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_oem_ums9230_13.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libcds_register.so:$(TARGET_COPY_OUT_ODM)/lib64/libcds_register.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libceres_online.so:$(TARGET_COPY_OUT_ODM)/lib64/libceres_online.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcolorlevel.so:$(TARGET_COPY_OUT_ODM)/lib64/libcolorlevel.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libcppdrv_r6p0.so:$(TARGET_COPY_OUT_ODM)/lib64/libcppdrv_r6p0.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libdeflicker.so:$(TARGET_COPY_OUT_ODM)/lib64/libdeflicker.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libdfa.so:$(TARGET_COPY_OUT_ODM)/lib64/libdfa.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libfacealgapi.so:$(TARGET_COPY_OUT_ODM)/lib64/libfacealgapi.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libfaceanalyze_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libfaceanalyze_SDK.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libfacesattribute.so:$(TARGET_COPY_OUT_ODM)/lib64/libfacesattribute.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libfaceskinseg.so:$(TARGET_COPY_OUT_ODM)/lib64/libfaceskinseg.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libflash.so:$(TARGET_COPY_OUT_ODM)/lib64/libflash.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libfrc.so:$(TARGET_COPY_OUT_ODM)/lib64/libfrc.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libgesture_mnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libgesture_mnn.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libgtm.so:$(TARGET_COPY_OUT_ODM)/lib64/libgtm.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libgyrostab.so:$(TARGET_COPY_OUT_ODM)/lib64/libgyrostab.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libhdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libhdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libinfo.so:$(TARGET_COPY_OUT_ODM)/lib64/libinfo.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libinterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libinterface.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libispalg.so:$(TARGET_COPY_OUT_ODM)/lib64/libispalg.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libiss.so:$(TARGET_COPY_OUT_ODM)/lib64/libiss.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libitdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libitdfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libkey.so:$(TARGET_COPY_OUT_ODM)/lib64/libkey.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblightportrait.so:$(TARGET_COPY_OUT_ODM)/lib64/liblightportrait.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblightweightpipeline.so:$(TARGET_COPY_OUT_ODM)/lib64/liblightweightpipeline.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblsc.so:$(TARGET_COPY_OUT_ODM)/lib64/liblsc.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwp3rdnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwpAdapter.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpAdapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwpcommon.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpcommon.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwphwnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwphwnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwpparser.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpparser.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwpswnodes.dummy.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpswnodes.dummy.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwpswnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwpswnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/liblwptranpluginnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwptranpluginnodes.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libmfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libmfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libmfnr_SD.so:$(TARGET_COPY_OUT_ODM)/lib64/libmfnr_SD.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_video_stabilizer.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libmulticam.so:$(TARGET_COPY_OUT_ODM)/lib64/libmulticam.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libomx_MF2SF_sw_sprd.so:$(TARGET_COPY_OUT_ODM)/lib64/libomx_MF2SF_sw_sprd.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libomx_avcdec_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib64/libomx_avcdec_hw_sprd_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libomx_avcenc_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib64/libomx_avcenc_hw_sprd_secure.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libomx_hevcdec_hw_sprd_secure.so:$(TARGET_COPY_OUT_ODM)/lib64/libomx_hevcdec_hw_sprd_secure.so \
@@ -970,6 +654,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib64/libotp_s5k5e8yx_jd.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5k5e8yx_jd.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libotp_s5kgd2_otp.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5kgd2_otp.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libotp_s5kjn1_otp.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5kjn1_otp.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libpdalgo.so:$(TARGET_COPY_OUT_ODM)/lib64/libpdalgo.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libpipelinelog.so:$(TARGET_COPY_OUT_ODM)/lib64/libpipelinelog.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libpss_isp2.7.so:$(TARGET_COPY_OUT_ODM)/lib64/libpss_isp2.7.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsample.so:$(TARGET_COPY_OUT_ODM)/lib64/libsample.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsensor_fakeserial.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_fakeserial.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsensor_fakeserial_sec.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_fakeserial_sec.so \
@@ -1055,13 +742,67 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib64/libsensor_virtual_sensor.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_virtual_sensor.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libskhynix_q2b_3231Q_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libskhynix_q2b_3231Q_shared.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libskhynix_q2b_5022Q_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libskhynix_q2b_5022Q_shared.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_aidepth_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_aidepth_bokeh.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsprd_fcell_gc32e1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_fcell_gc32e1.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsprd_fcell_hi3231q.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_fcell_hi3231q.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsprd_fcell_hi5022q.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_fcell_hi5022q.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_gesture_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_gesture_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_mfsr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_mfsr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_cap.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_cap.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_cap_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_cap_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_seg.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_seg.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_portrait_seg_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_portrait_seg_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_ai_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_ai_mfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_mfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_mfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprd_raw_mfnr_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprd_raw_mfnr_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaic.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaic.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaidepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaidepthadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaifacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaifacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaisfnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaisfnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdaisfnradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdaisfnradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdbokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdbokeh.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdbokeh_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdbokeh_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdcamalgassist.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdcamalgassist.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdcnr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdcnr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprddepth.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddepth.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprddepthadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddepthadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprddre.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddre.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprddrepro.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddrepro.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprddreproadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprddreproadapter.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsprdee.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdee.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsprdee_adapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdee_adapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeauty.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeauty.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeauty_vdsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeauty_vdsp.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfacebeautyfdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfacebeautyfdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfar.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfar.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfarcnn_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfarcnn_SDK.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd_SDK.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd_SDK.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfd_hw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfd_hw.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdfdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdfdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr3.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdr4.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdr4.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdhdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdhdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdlsc.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdlsc.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdmd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdmd.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdmfsradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdmfsradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdorb.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdorb.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdscenedetect.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdscenedetect.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdvideohdradapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdvideohdradapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarp.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarpadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarpadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwarppro.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwarppro.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libsprdwtadapter.so:$(TARGET_COPY_OUT_ODM)/lib64/libsprdwtadapter.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_capture_api.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libsuper_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libsuper_night.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib64/libtensorflowlite_c.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libtflite_native_gainference.so:$(TARGET_COPY_OUT_ODM)/lib64/libtflite_native_gainference.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libtflite_native_inference.so:$(TARGET_COPY_OUT_ODM)/lib64/libtflite_native_inference.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libumnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libumnn.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libunnengine.so:$(TARGET_COPY_OUT_ODM)/lib64/libunnengine.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_cn398a.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_cn398a.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_dw9714.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9714.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_dw9714p.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9714p.so \
@@ -1079,6 +820,17 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_lc898219.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_lc898219.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_lc898229.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_lc898229.so \
     vendor/infinix/X6528/proprietary/odm/lib64/libvcm_zc524.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_zc524.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libverify.so:$(TARGET_COPY_OUT_ODM)/lib64/libverify.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libxtm.so:$(TARGET_COPY_OUT_ODM)/lib64/libxtm.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/libyuv420_scaler.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuv420_scaler.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamMFPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamMFPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamMRPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamMRPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamNZ.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamNZ.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamPTC.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamPTC.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFBSP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFBSP.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFP.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSFPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSFPP.so \
+    vendor/infinix/X6528/proprietary/odm/lib64/lwpPolicy/libcamSRPP.so:$(TARGET_COPY_OUT_ODM)/lib64/lwpPolicy/libcamSRPP.so \
     vendor/infinix/X6528/proprietary/odm/logo/logo_1000x200.rgba:$(TARGET_COPY_OUT_ODM)/logo/logo_1000x200.rgba \
     vendor/infinix/X6528/proprietary/odm/logo/logo_100x20.rgba:$(TARGET_COPY_OUT_ODM)/logo/logo_100x20.rgba \
     vendor/infinix/X6528/proprietary/odm/logo/logo_1500x300.rgba:$(TARGET_COPY_OUT_ODM)/logo/logo_1500x300.rgba \
@@ -1095,10 +847,53 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/odm/logo/time_vert_48x24x13.yuv:$(TARGET_COPY_OUT_ODM)/logo/time_vert_48x24x13.yuv \
     vendor/infinix/X6528/proprietary/odm/logo/time_vert_72x36x13.rgba:$(TARGET_COPY_OUT_ODM)/logo/time_vert_72x36x13.rgba \
     vendor/infinix/X6528/proprietary/odm/logo/time_vert_72x36x13.yuv:$(TARGET_COPY_OUT_ODM)/logo/time_vert_72x36x13.yuv \
-    vendor/infinix/X6528/proprietary/vendor/app/LogManager/LogManager.apk:$(TARGET_COPY_OUT_VENDOR)/app/LogManager/LogManager.apk \
-    vendor/infinix/X6528/proprietary/vendor/app/Manual/Manual.apk:$(TARGET_COPY_OUT_VENDOR)/app/Manual/Manual.apk \
-    vendor/infinix/X6528/proprietary/vendor/app/ProxyNFwLocation/ProxyNFwLocation.apk:$(TARGET_COPY_OUT_VENDOR)/app/ProxyNFwLocation/ProxyNFwLocation.apk \
-    vendor/infinix/X6528/proprietary/vendor/app/UASetting/UASetting.apk:$(TARGET_COPY_OUT_VENDOR)/app/UASetting/UASetting.apk \
+    vendor/infinix/X6528/proprietary/system_ext/etc/init/dataLogDaemon.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dataLogDaemon.rc \
+    vendor/infinix/X6528/proprietary/system_ext/etc/init/data_rps.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/data_rps.rc \
+    vendor/infinix/X6528/proprietary/vendor/bin/adbtestmode:$(TARGET_COPY_OUT_VENDOR)/bin/adbtestmode \
+    vendor/infinix/X6528/proprietary/vendor/bin/aiactiver_testbench:$(TARGET_COPY_OUT_VENDOR)/bin/aiactiver_testbench \
+    vendor/infinix/X6528/proprietary/vendor/bin/antiflashing:$(TARGET_COPY_OUT_VENDOR)/bin/antiflashing \
+    vendor/infinix/X6528/proprietary/vendor/bin/audiodumpclient:$(TARGET_COPY_OUT_VENDOR)/bin/audiodumpclient \
+    vendor/infinix/X6528/proprietary/vendor/bin/bootcheckbox:$(TARGET_COPY_OUT_VENDOR)/bin/bootcheckbox \
+    vendor/infinix/X6528/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
+    vendor/infinix/X6528/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
+    vendor/infinix/X6528/proprietary/vendor/bin/btools:$(TARGET_COPY_OUT_VENDOR)/bin/btools \
+    vendor/infinix/X6528/proprietary/vendor/bin/charge:$(TARGET_COPY_OUT_VENDOR)/bin/charge \
+    vendor/infinix/X6528/proprietary/vendor/bin/charged:$(TARGET_COPY_OUT_VENDOR)/bin/charged \
+    vendor/infinix/X6528/proprietary/vendor/bin/connmgr:$(TARGET_COPY_OUT_VENDOR)/bin/connmgr \
+    vendor/infinix/X6528/proprietary/vendor/bin/connmgr_cli:$(TARGET_COPY_OUT_VENDOR)/bin/connmgr_cli \
+    vendor/infinix/X6528/proprietary/vendor/bin/cp_diskserver:$(TARGET_COPY_OUT_VENDOR)/bin/cp_diskserver \
+    vendor/infinix/X6528/proprietary/vendor/bin/cp_dump_dbg:$(TARGET_COPY_OUT_VENDOR)/bin/cp_dump_dbg \
+    vendor/infinix/X6528/proprietary/vendor/bin/cplogctl:$(TARGET_COPY_OUT_VENDOR)/bin/cplogctl \
+    vendor/infinix/X6528/proprietary/vendor/bin/dcxsrv:$(TARGET_COPY_OUT_VENDOR)/bin/dcxsrv \
+    vendor/infinix/X6528/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
+    vendor/infinix/X6528/proprietary/vendor/bin/engpc:$(TARGET_COPY_OUT_VENDOR)/bin/engpc \
+    vendor/infinix/X6528/proprietary/vendor/bin/engpcctl:$(TARGET_COPY_OUT_VENDOR)/bin/engpcctl \
+    vendor/infinix/X6528/proprietary/vendor/bin/enhance_test:$(TARGET_COPY_OUT_VENDOR)/bin/enhance_test \
+    vendor/infinix/X6528/proprietary/vendor/bin/fpc_tee_test:$(TARGET_COPY_OUT_VENDOR)/bin/fpc_tee_test \
+    vendor/infinix/X6528/proprietary/vendor/bin/fpsmgr:$(TARGET_COPY_OUT_VENDOR)/bin/fpsmgr \
+    vendor/infinix/X6528/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service.unisoc \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service.trusty \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.4-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.1-unisoc-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.power.stats-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.stats-service.example \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.rebootescrow-service.default:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.rebootescrow-service.default \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.usb-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-service.example \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/urild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/urild \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.sprd.hardware.algoservice@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.algoservice@1.0-service \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.sprd.hardware.biometrics.face-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sprd.hardware.biometrics.face-service \
@@ -1124,6 +919,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.tne@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.tne@1.0-service \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.unisoc.hardware.ai_engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.ai_engine-service \
     vendor/infinix/X6528/proprietary/vendor/bin/hw/vendor.unisoc.hardware.power-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.unisoc.hardware.power-service \
+    vendor/infinix/X6528/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
+    vendor/infinix/X6528/proprietary/vendor/bin/idlestat:$(TARGET_COPY_OUT_VENDOR)/bin/idlestat \
+    vendor/infinix/X6528/proprietary/vendor/bin/iwnpi:$(TARGET_COPY_OUT_VENDOR)/bin/iwnpi \
+    vendor/infinix/X6528/proprietary/vendor/bin/modem_control:$(TARGET_COPY_OUT_VENDOR)/bin/modem_control \
+    vendor/infinix/X6528/proprietary/vendor/bin/modem_ctrl_dbg:$(TARGET_COPY_OUT_VENDOR)/bin/modem_ctrl_dbg \
+    vendor/infinix/X6528/proprietary/vendor/bin/nvmerge:$(TARGET_COPY_OUT_VENDOR)/bin/nvmerge \
+    vendor/infinix/X6528/proprietary/vendor/bin/phasecheckserver:$(TARGET_COPY_OUT_VENDOR)/bin/phasecheckserver \
     vendor/infinix/X6528/proprietary/vendor/bin/power/backlight/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/backlight/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/cpu/dvfs/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/dvfs/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/cpu/fix_freq/fix_cpu_freq:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/fix_freq/fix_cpu_freq \
@@ -1135,8 +937,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/bin/power/cpu/loading/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/loading/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/cpu/trans_table/cpu_trans_table:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/trans_table/cpu_trans_table \
     vendor/infinix/X6528/proprietary/vendor/bin/power/cpu/trans_table/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/trans_table/readme \
-    vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/bm/tool/ddr_bm:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/bm/tool/ddr_bm \
     vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/bm/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/bm/readme \
+    vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/bm/tool/ddr_bm:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/bm/tool/ddr_bm \
     vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/fix_freq/fix_ddr_freq:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/fix_freq/fix_ddr_freq \
     vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/fix_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/fix_freq/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/ddr/loading/ddr_loading:$(TARGET_COPY_OUT_VENDOR)/bin/power/ddr/loading/ddr_loading \
@@ -1153,40 +955,11 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/bin/power/interrupt/interrupt:$(TARGET_COPY_OUT_VENDOR)/bin/power/interrupt/interrupt \
     vendor/infinix/X6528/proprietary/vendor/bin/power/interrupt/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/interrupt/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/loadings/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/loadings/readme \
-    vendor/infinix/X6528/proprietary/vendor/bin/power/paras/tool/paras:$(TARGET_COPY_OUT_VENDOR)/bin/power/paras/tool/paras \
     vendor/infinix/X6528/proprietary/vendor/bin/power/paras/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/paras/readme \
+    vendor/infinix/X6528/proprietary/vendor/bin/power/paras/tool/paras:$(TARGET_COPY_OUT_VENDOR)/bin/power/paras/tool/paras \
     vendor/infinix/X6528/proprietary/vendor/bin/power/tops/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/tops/readme \
     vendor/infinix/X6528/proprietary/vendor/bin/power/tops/tops:$(TARGET_COPY_OUT_VENDOR)/bin/power/tops/tops \
     vendor/infinix/X6528/proprietary/vendor/bin/power/total/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/total/readme \
-    vendor/infinix/X6528/proprietary/vendor/bin/adbtestmode:$(TARGET_COPY_OUT_VENDOR)/bin/adbtestmode \
-    vendor/infinix/X6528/proprietary/vendor/bin/aiactiver_testbench:$(TARGET_COPY_OUT_VENDOR)/bin/aiactiver_testbench \
-    vendor/infinix/X6528/proprietary/vendor/bin/antiflashing:$(TARGET_COPY_OUT_VENDOR)/bin/antiflashing \
-    vendor/infinix/X6528/proprietary/vendor/bin/audiodumpclient:$(TARGET_COPY_OUT_VENDOR)/bin/audiodumpclient \
-    vendor/infinix/X6528/proprietary/vendor/bin/bootcheckbox:$(TARGET_COPY_OUT_VENDOR)/bin/bootcheckbox \
-    vendor/infinix/X6528/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
-    vendor/infinix/X6528/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
-    vendor/infinix/X6528/proprietary/vendor/bin/btools:$(TARGET_COPY_OUT_VENDOR)/bin/btools \
-    vendor/infinix/X6528/proprietary/vendor/bin/charge:$(TARGET_COPY_OUT_VENDOR)/bin/charge \
-    vendor/infinix/X6528/proprietary/vendor/bin/charged:$(TARGET_COPY_OUT_VENDOR)/bin/charged \
-    vendor/infinix/X6528/proprietary/vendor/bin/connmgr:$(TARGET_COPY_OUT_VENDOR)/bin/connmgr \
-    vendor/infinix/X6528/proprietary/vendor/bin/connmgr_cli:$(TARGET_COPY_OUT_VENDOR)/bin/connmgr_cli \
-    vendor/infinix/X6528/proprietary/vendor/bin/cp_diskserver:$(TARGET_COPY_OUT_VENDOR)/bin/cp_diskserver \
-    vendor/infinix/X6528/proprietary/vendor/bin/cp_dump_dbg:$(TARGET_COPY_OUT_VENDOR)/bin/cp_dump_dbg \
-    vendor/infinix/X6528/proprietary/vendor/bin/cplogctl:$(TARGET_COPY_OUT_VENDOR)/bin/cplogctl \
-    vendor/infinix/X6528/proprietary/vendor/bin/dcxsrv:$(TARGET_COPY_OUT_VENDOR)/bin/dcxsrv \
-    vendor/infinix/X6528/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
-    vendor/infinix/X6528/proprietary/vendor/bin/engpc:$(TARGET_COPY_OUT_VENDOR)/bin/engpc \
-    vendor/infinix/X6528/proprietary/vendor/bin/engpcctl:$(TARGET_COPY_OUT_VENDOR)/bin/engpcctl \
-    vendor/infinix/X6528/proprietary/vendor/bin/enhance_test:$(TARGET_COPY_OUT_VENDOR)/bin/enhance_test \
-    vendor/infinix/X6528/proprietary/vendor/bin/fpc_tee_test:$(TARGET_COPY_OUT_VENDOR)/bin/fpc_tee_test \
-    vendor/infinix/X6528/proprietary/vendor/bin/fpsmgr:$(TARGET_COPY_OUT_VENDOR)/bin/fpsmgr \
-    vendor/infinix/X6528/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
-    vendor/infinix/X6528/proprietary/vendor/bin/idlestat:$(TARGET_COPY_OUT_VENDOR)/bin/idlestat \
-    vendor/infinix/X6528/proprietary/vendor/bin/iwnpi:$(TARGET_COPY_OUT_VENDOR)/bin/iwnpi \
-    vendor/infinix/X6528/proprietary/vendor/bin/modem_control:$(TARGET_COPY_OUT_VENDOR)/bin/modem_control \
-    vendor/infinix/X6528/proprietary/vendor/bin/modem_ctrl_dbg:$(TARGET_COPY_OUT_VENDOR)/bin/modem_ctrl_dbg \
-    vendor/infinix/X6528/proprietary/vendor/bin/nvmerge:$(TARGET_COPY_OUT_VENDOR)/bin/nvmerge \
-    vendor/infinix/X6528/proprietary/vendor/bin/phasecheckserver:$(TARGET_COPY_OUT_VENDOR)/bin/phasecheckserver \
     vendor/infinix/X6528/proprietary/vendor/bin/refnotify:$(TARGET_COPY_OUT_VENDOR)/bin/refnotify \
     vendor/infinix/X6528/proprietary/vendor/bin/remosaic_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/remosaic_daemon \
     vendor/infinix/X6528/proprietary/vendor/bin/rkp_factory_extraction_tool:$(TARGET_COPY_OUT_VENDOR)/bin/rkp_factory_extraction_tool \
@@ -1207,7 +980,31 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/bin/yloglite:$(TARGET_COPY_OUT_VENDOR)/bin/yloglite \
     vendor/infinix/X6528/proprietary/vendor/bin/yloglitectl:$(TARGET_COPY_OUT_VENDOR)/bin/yloglitectl \
     vendor/infinix/X6528/proprietary/vendor/bin/yloglitekat:$(TARGET_COPY_OUT_VENDOR)/bin/yloglitekat \
+    vendor/infinix/X6528/proprietary/vendor/etc/BBAT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/BBAT.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/FD_tunning_param.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FD_tunning_param.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/analyzer.py:$(TARGET_COPY_OUT_VENDOR)/etc/analyzer.py \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_config.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_apm_configuration_configurable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_apm_configuration_configurable.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_criterion_types.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_criterion_types.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/blackAppList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/blackAppList.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/bluetooth_audio_policy_configuration_disable_offload.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_disable_offload.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/cloudengine/ReadMe.txt:$(TARGET_COPY_OUT_VENDOR)/etc/cloudengine/ReadMe.txt \
+    vendor/infinix/X6528/proprietary/vendor/etc/config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/config.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/cp_dump_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cp_dump_info.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/deviceidle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/deviceidle.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/beq44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq44 \
@@ -1233,6 +1030,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/music_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory48 \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/music_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_speaker48 \
     vendor/infinix/X6528/proprietary/vendor/etc/dts/off_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/off_speaker48 \
+    vendor/infinix/X6528/proprietary/vendor/etc/dynamic_debug_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dynamic_debug_config.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/engpc/chnl/autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/autotest.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/engpc/chnl/cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/cali.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/engpc/chnl/normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/engpc/chnl/normal.conf \
@@ -1259,14 +1057,61 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/enhance/lcd_td4160_txd_mipi_hdp_abc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_txd_mipi_hdp_abc.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/enhance/lcd_td4160_txd_mipi_hdp_cms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_txd_mipi_hdp_cms.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/enhance/lcd_td4160_txd_mipi_hdp_gamma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_td4160_txd_mipi_hdp_gamma.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/fpsmgr.db:$(TARGET_COPY_OUT_VENDOR)/etc/fpsmgr.db \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.A666L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.A666L \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.A666LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.A666LN \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6h:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6h \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6n:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6n \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6s:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6s \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P663L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P663L \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P663LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P663LN \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P683L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P683L \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S662LT:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S662LT \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S662LTGO:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S662LTGO \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S681LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S681LN \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6525:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6525 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6528:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6528 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6528B:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6528B \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.cali:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.cali \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.charge_mode:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.charge_mode \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_1h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10_go \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_4h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_4h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10_go \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_6h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_6h10 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_7h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_7h10 \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_haps:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_haps \
+    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_zebu:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_zebu \
     vendor/infinix/X6528/proprietary/vendor/etc/gralloc/gralloc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gralloc.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/icap/control/IcapSwitchs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/IcapSwitchs.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/icap/control/scenes/Type_DFX.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_DFX.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/icap/control/scenes/Type_ISS.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_ISS.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/icap/control/scenes/Type_Preview.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_Preview.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/icap/control/scenes/Type_Video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/scenes/Type_Video.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/icap/control/IcapSwitchs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/icap/control/IcapSwitchs.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/imsUserAgent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/imsUserAgent.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/init/adbtestmode.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/adbtestmode.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/ai_engine-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ai_engine-default.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-armnn-gpu.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@2.0-unisoc.service.trusty.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.usb-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.example.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/antiflashing.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/antiflashing.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/autotest.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/autotest.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
@@ -1313,6 +1158,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/init/tsupplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tsupplicant.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/turbocloudservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/turbocloudservice.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/turbopower.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/turbopower.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/init/unisoc.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unisoc.rild.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/vendor-fingerprintmmi-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-fingerprintmmi-default.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/vendor-oemlock-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-oemlock-default.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc \
@@ -1331,6 +1177,19 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/vowifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vowifi.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/init/yloglite.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/yloglite.rc \
+    vendor/infinix/X6528/proprietary/vendor/etc/lmkd_param.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lmkd_param.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/log_settings.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_autotest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_autotest.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_cali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_cali.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_factory.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_lite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_lite.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/memfusion2/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/memfusion2/fstab.enableswap \
     vendor/infinix/X6528/proprietary/vendor/etc/midtest/common/AllItemConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/midtest/common/AllItemConfig.json \
     vendor/infinix/X6528/proprietary/vendor/etc/midtest/common/CommonParams.json:$(TARGET_COPY_OUT_VENDOR)/etc/midtest/common/CommonParams.json \
@@ -1344,16 +1203,30 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/midtest/mode/ModeConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/midtest/mode/ModeConfig.json \
     vendor/infinix/X6528/proprietary/vendor/etc/midtest/mode/QT.json:$(TARGET_COPY_OUT_VENDOR)/etc/midtest/mode/QT.json \
     vendor/infinix/X6528/proprietary/vendor/etc/midtest/mode/QT2.json:$(TARGET_COPY_OUT_VENDOR)/etc/midtest/mode/QT2.json \
+    vendor/infinix/X6528/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/infinix/X6528/proprietary/vendor/etc/models/noahark/gesture/tsn_gesture:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/gesture/tsn_gesture \
     vendor/infinix/X6528/proprietary/vendor/etc/models/noahark/imageClassify/README.md:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/README.md \
     vendor/infinix/X6528/proprietary/vendor/etc/models/noahark/imageClassify/cv_imageClassify:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/cv_imageClassify \
     vendor/infinix/X6528/proprietary/vendor/etc/models/noahark/imageClassify/imageclassify_labels.txt:$(TARGET_COPY_OUT_VENDOR)/etc/models/noahark/imageClassify/imageclassify_labels.txt \
+    vendor/infinix/X6528/proprietary/vendor/etc/modem_cp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_cp_info.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/modem_sp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_sp_info.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/numeric_operator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/numeric_operator.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/nvmerge.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/nvmerge.cfg \
+    vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/Structure/Policy/ProductStrategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/ProductStrategies.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicyClass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicyClass.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem-CommonTypes.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/audio_PolicySubsystem.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/power_info.db:$(TARGET_COPY_OUT_VENDOR)/etc/power_info.db \
+    vendor/infinix/X6528/proprietary/vendor/etc/power_resource_file_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_file_info.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/power_resource_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_id_define.txt \
+    vendor/infinix/X6528/proprietary/vendor/etc/power_scene_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_config.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/power_scene_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_id_define.txt \
+    vendor/infinix/X6528/proprietary/vendor/etc/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/infinix/X6528/proprietary/vendor/etc/pwctl_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwctl_config.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/raw_mfnr/raw_mfnr/const_file.txt:$(TARGET_COPY_OUT_VENDOR)/etc/raw_mfnr/raw_mfnr/const_file.txt \
     vendor/infinix/X6528/proprietary/vendor/etc/raw_mfnr/raw_mfnr/raw_mfnr_tuning.txt:$(TARGET_COPY_OUT_VENDOR)/etc/raw_mfnr/raw_mfnr/raw_mfnr_tuning.txt \
     vendor/infinix/X6528/proprietary/vendor/etc/res/images/720_1600_bat_100.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/720_1600_bat_100.png \
@@ -1737,70 +1610,17 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/res/images/number_percent_480X800_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_480X800_rotate.png \
     vendor/infinix/X6528/proprietary/vendor/etc/res/images/number_percent_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_720X1280.png \
     vendor/infinix/X6528/proprietary/vendor/etc/res/images/number_percent_720X1280_rotate.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_720X1280_rotate.png \
-    vendor/infinix/X6528/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy \
-    vendor/infinix/X6528/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
-    vendor/infinix/X6528/proprietary/vendor/etc/BBAT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/BBAT.conf \
-    vendor/infinix/X6528/proprietary/vendor/etc/FD_tunning_param.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FD_tunning_param.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/analyzer.py:$(TARGET_COPY_OUT_VENDOR)/etc/analyzer.py \
-    vendor/infinix/X6528/proprietary/vendor/etc/audio_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_config.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/blackAppList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/blackAppList.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/config.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/cp_dump_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cp_dump_info.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/deviceidle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/deviceidle.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/dynamic_debug_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dynamic_debug_config.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/fpsmgr.db:$(TARGET_COPY_OUT_VENDOR)/etc/fpsmgr.db \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.A666L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.A666L \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.A666LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.A666LN \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6h:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6h \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6n:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6n \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.BG6s:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.BG6s \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P663L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P663L \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P663LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P663LN \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.P683L:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.P683L \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S662LT:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S662LT \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S662LTGO:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S662LTGO \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.S681LN:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.S681LN \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6525:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6525 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6528:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6528 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.X6528B:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.X6528B \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.cali:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.cali \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.charge_mode:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.charge_mode \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_1h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_1h10_go \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_4h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_4h10_go:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_4h10_go \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_6h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_6h10 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_7h10:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_7h10 \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_haps:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_haps \
-    vendor/infinix/X6528/proprietary/vendor/etc/fstab.ums9230_zebu:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ums9230_zebu \
-    vendor/infinix/X6528/proprietary/vendor/etc/imsUserAgent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/imsUserAgent.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/lmkd_param.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lmkd_param.conf \
-    vendor/infinix/X6528/proprietary/vendor/etc/log_settings.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_autotest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_autotest.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_cali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_cali.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_factory.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/log_settings_lite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings_lite.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
-    vendor/infinix/X6528/proprietary/vendor/etc/modem_cp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_cp_info.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/modem_sp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_sp_info.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/numeric_operator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/numeric_operator.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/nvmerge.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/nvmerge.cfg \
-    vendor/infinix/X6528/proprietary/vendor/etc/power_info.db:$(TARGET_COPY_OUT_VENDOR)/etc/power_info.db \
-    vendor/infinix/X6528/proprietary/vendor/etc/power_resource_file_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_file_info.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/power_resource_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_id_define.txt \
-    vendor/infinix/X6528/proprietary/vendor/etc/power_scene_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_config.xml \
-    vendor/infinix/X6528/proprietary/vendor/etc/power_scene_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_id_define.txt \
-    vendor/infinix/X6528/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/infinix/X6528/proprietary/vendor/etc/pwctl_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwctl_config.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/resolution_tuner_app_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resolution_tuner_app_list.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/scenario.conf:$(TARGET_COPY_OUT_VENDOR)/etc/scenario.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy \
+    vendor/infinix/X6528/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
+    vendor/infinix/X6528/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/slog_modem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/slog_modem_autotest.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_autotest.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/slog_modem_cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_cali.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/slog_modem_factory.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_factory.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/spirentroot.cer:$(TARGET_COPY_OUT_VENDOR)/etc/spirentroot.cer \
+    vendor/infinix/X6528/proprietary/vendor/etc/sprd_audio_policy_engine_criteria.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_audio_policy_engine_criteria.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/sprd_hdr_tuning.param:$(TARGET_COPY_OUT_VENDOR)/etc/sprd_hdr_tuning.param \
     vendor/infinix/X6528/proprietary/vendor/etc/supl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/supl.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
@@ -1809,17 +1629,30 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/infinix/X6528/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/infinix/X6528/proprietary/vendor/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/virtual_spn_conf_by_efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual_spn_conf_by_efgid1.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/virtual_spn_conf_by_efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual_spn_conf_by_efpnn.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/virtual_spn_conf_by_efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual_spn_conf_by_efspn.xml \
     vendor/infinix/X6528/proprietary/vendor/etc/virtual_spn_conf_by_imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual_spn_conf_by_imsi.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
+    vendor/infinix/X6528/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    vendor/infinix/X6528/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/ylog.conf.debug:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.debug \
     vendor/infinix/X6528/proprietary/vendor/etc/ylog.conf.factorytest:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.factorytest \
     vendor/infinix/X6528/proprietary/vendor/etc/ylog.conf.user:$(TARGET_COPY_OUT_VENDOR)/etc/ylog.conf.user \
     vendor/infinix/X6528/proprietary/vendor/etc/yloglite.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglite.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/yloglitesource.conf:$(TARGET_COPY_OUT_VENDOR)/etc/yloglitesource.conf \
     vendor/infinix/X6528/proprietary/vendor/etc/ylogsource.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ylogsource.conf \
+    vendor/infinix/X6528/proprietary/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest.ini \
+    vendor/infinix/X6528/proprietary/vendor/firmware/PortraitSegHP.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegHP.mnn \
+    vendor/infinix/X6528/proprietary/vendor/firmware/PortraitSegLP.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegLP.mnn \
+    vendor/infinix/X6528/proprietary/vendor/firmware/X6528_ICNL9916AC_TXD_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/X6528_ICNL9916AC_TXD_fw.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/X6528_ft8722_TXD_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/X6528_ft8722_TXD_fw.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/faceid.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/faceid.elf \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/cap0/uiinput.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/cfg.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/com/AE_16433.bin \
@@ -1878,9 +1711,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/other/version_info.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/prv0/uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/video0/uiinput.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/cfg.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/cap0/uiinput.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/cfg.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/com/AE_16433.bin \
@@ -1939,9 +1772,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/other/version_info.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/prv0/uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/video0/uiinput.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/cfg.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/cap0/uiinput.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/cfg.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/com/AE_16433.bin \
@@ -2000,9 +1833,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/other/version_info.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/prv0/uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/video0/uiinput.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/cfg.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/cap0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/cap0/uiinput.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/cfg.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/com/AE_16433.bin \
@@ -2061,8 +1894,11 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/other/version_info.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/other/version_info.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/prv0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/prv0/uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/video0/uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/video0/uiinput.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/cfg.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fakeserial_sec_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/fakeserial_sec_bk/cfg.xml \
+    vendor/infinix/X6528/proprietary/vendor/firmware/focaltech_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fpctzapp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.elf \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params_fast.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params_fast.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params_voip.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params_voip.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap0/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap0/CFAI_20569.bin \
@@ -2129,6 +1965,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/com/AE_16433.bin \
@@ -2254,7 +2091,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/video0_zoom2x/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/video0_zoom2x/CCE_UVDIV_20570.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/video0_zoom2x/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/video0_zoom2x/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/video0_zoom2x/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/video0_zoom2x/YNR_20576.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap0/CFAI_20569.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap0/CFAI_20569.bin \
@@ -2321,6 +2157,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/com/AE_16433.bin \
@@ -2447,7 +2284,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/video0_zoom2x/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/video0_zoom2x/CCE_UVDIV_20570.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/video0_zoom2x/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/video0_zoom2x/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/video0_zoom2x/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/video0_zoom2x/YNR_20576.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/gc32e1_1856_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/gc32e1_1856_bk/cfg.xml \
+    vendor/infinix/X6528/proprietary/vendor/firmware/gesture.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/gesture.mnn \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hdcp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcp.elf \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hdl_firmware_00.img:$(TARGET_COPY_OUT_VENDOR)/firmware/hdl_firmware_00.img \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hdl_firmware_02.img:$(TARGET_COPY_OUT_VENDOR)/firmware/hdl_firmware_02.img \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap0/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap0/CCE_UVDIV_20570.bin \
@@ -2518,6 +2358,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/com/AE_16433.bin \
@@ -2642,7 +2483,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/video0_zoom2x/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/video0_zoom2x/CCE_UVDIV_20570.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/video0_zoom2x/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/video0_zoom2x/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/video0_zoom2x/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/video0_zoom2x/YNR_20576.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap0/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap0/CCE_UVDIV_20570.bin \
@@ -2713,6 +2553,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/com/AE_16433.bin \
@@ -2837,7 +2678,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/video0_zoom2x/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/video0_zoom2x/CCE_UVDIV_20570.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/video0_zoom2x/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/video0_zoom2x/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/video0_zoom2x/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/video0_zoom2x/YNR_20576.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hi3231q_1884_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi3231q_1884_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap0/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap0/CCE_UVDIV_20570.bin \
@@ -2953,6 +2793,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/com/AE_16433.bin \
@@ -3136,7 +2977,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/video1_sm120/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/video1_sm120/UV_POSTCDN_20575.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/video1_sm120/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/video1_sm120/YNR_20576.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/video1_sm120/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/video1_sm120/YUV_PRECDN_20573.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap0/CCE_UVDIV_20570.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap0/CCE_UVDIV_20570.bin \
@@ -3252,6 +3092,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap1_zoom/EE_20577.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap1_zoom/EE_20577.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cap1_zoom/YNR_20576.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/com/AE_16433.bin \
@@ -3435,7 +3276,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/video1_sm120/UV_POSTCDN_20575.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/video1_sm120/UV_POSTCDN_20575.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/video1_sm120/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/video1_sm120/YNR_20576.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/video1_sm120/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/video1_sm120/YUV_PRECDN_20573.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hi5022q_1859_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/hi5022q_1859_bk/cfg.xml \
+    vendor/infinix/X6528/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db \
+    vendor/infinix/X6528/proprietary/vendor/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db.p7s \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap0/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap0/CNR3_20598.bin \
@@ -3539,6 +3383,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap1_zoom/YNR_20576.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cap1_zoom/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cap1_zoom/YUV_PRECDN_20573.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/com/AE_16433.bin \
@@ -3818,7 +3663,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/video0_videocapture_zoom4x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/video0_videocapture_zoom4x/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/video0_videocapture_zoom6x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/video0_videocapture_zoom6x/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/video0_videocapture_zoom8x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/video0_videocapture_zoom8x/3DNR_20571.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap0/BAYER_NR_20591.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap0/BAYER_NR_20591.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap0/BAYER_NR_20591_uiinput.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap0/BAYER_NR_20591_uiinput.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap0/CNR3_20598.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap0/CNR3_20598.bin \
@@ -3922,6 +3766,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap1_zoom/YNRS_20588.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap1_zoom/YNRS_20588.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap1_zoom/YNR_20576.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap1_zoom/YNR_20576.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cap1_zoom/YUV_PRECDN_20573.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cap1_zoom/YUV_PRECDN_20573.bin \
+    vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cfg.xml \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/com/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/com/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/com/AEM_16398.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/com/AEM_16398.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/com/AE_16433.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/com/AE_16433.bin \
@@ -4202,43 +4047,210 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/video0_videocapture_zoom4x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/video0_videocapture_zoom4x/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/video0_videocapture_zoom6x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/video0_videocapture_zoom6x/3DNR_20571.bin \
     vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/video0_videocapture_zoom8x/3DNR_20571.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/video0_videocapture_zoom8x/3DNR_20571.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/s5kjn1_1858_bk/cfg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/s5kjn1_1858_bk/cfg.xml \
-    vendor/infinix/X6528/proprietary/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest.ini \
-    vendor/infinix/X6528/proprietary/vendor/firmware/PortraitSegHP.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegHP.mnn \
-    vendor/infinix/X6528/proprietary/vendor/firmware/PortraitSegLP.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegLP.mnn \
-    vendor/infinix/X6528/proprietary/vendor/firmware/X6528_ICNL9916AC_TXD_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/X6528_ICNL9916AC_TXD_fw.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/X6528_ft8722_TXD_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/X6528_ft8722_TXD_fw.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/faceid.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/faceid.elf \
-    vendor/infinix/X6528/proprietary/vendor/firmware/focaltech_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fpctzapp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.elf \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params_fast.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params_fast.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/fsmaudio_params_voip.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fsmaudio_params_voip.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/gesture.mnn:$(TARGET_COPY_OUT_VENDOR)/firmware/gesture.mnn \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hdcp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/hdcp.elf \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hdl_firmware_00.img:$(TARGET_COPY_OUT_VENDOR)/firmware/hdl_firmware_00.img \
-    vendor/infinix/X6528/proprietary/vendor/firmware/hdl_firmware_02.img:$(TARGET_COPY_OUT_VENDOR)/firmware/hdl_firmware_02.img \
-    vendor/infinix/X6528/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
-    vendor/infinix/X6528/proprietary/vendor/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db \
-    vendor/infinix/X6528/proprietary/vendor/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db.p7s \
     vendor/infinix/X6528/proprietary/vendor/firmware/silead.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/silead.elf \
     vendor/infinix/X6528/proprietary/vendor/firmware/soter.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/soter.elf \
-    vendor/infinix/X6528/proprietary/vendor/framework/com.fingerprints.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.fingerprints.extension.jar \
+    vendor/infinix/X6528/proprietary/vendor/lib/MemsicAlgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/MemsicAlgo.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk_platform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V3-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audioclient-types-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/av-types-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.2-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.3-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.4-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-external-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.4-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.5-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-external-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.5-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/camera.device@3.6-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.6-external-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/framework-permission-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@7.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.1-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.broadcastradio@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.bluetooth.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.ums9230.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.primary.whale.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.whale.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/bootctrl.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/bootctrl.default.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/dpu.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/dpu.unisoc.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/enhance.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/enhance.unisoc.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/face.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/face.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.silead.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/gsp.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gsp.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/hwcomposer.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.unisoc.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/libfsm_sdg_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libfsm_sdg_hal.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/liblowi_wifihal.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/libwifi-hal-unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libwifi-hal-unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/thermal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.default.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/unisoc.bootctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/unisoc.bootctrl.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/vendor.sprd.hardware.connmgr@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.sprd.hardware.connmgr@1.0-impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/vendor.sprd.hardware.gnss@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.sprd.hardware.gnss@1.0-impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/vendor.sprd.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.sprd.hardware.thermal@2.0-impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/vendor.sprd.hardware.trusty-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.sprd.hardware.trusty-impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib/hw/vendor.sprd.hardware.wcn@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.sprd.hardware.wcn@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.ums9230.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libAlgoServiceAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlgoServiceAdapter.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libGLES_mali_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLES_mali_cl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1 \
+    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.1 \
+    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.2 \
+    vendor/infinix/X6528/proprietary/vendor/lib/libTransAgc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTransAgc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libWhite_point_shift.so:$(TARGET_COPY_OUT_VENDOR)/lib/libWhite_point_shift.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/lib_crypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_crypto.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/lib_hdr10plus_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_hdr10plus_tm.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/lib_hsv_rgb_conv.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_hsv_rgb_conv.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libalsa_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsa_utils.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_shot.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libatci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatci.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libaudiodump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodump.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libaudiomiscctl_whale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiomiscctl_whale.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libavcodec-58.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavcodec-58.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libavutil-56.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavutil-56.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libbqbbt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbqbbt.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libbt-sprd_suite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-sprd_suite.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libbt-ssp_bt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-ssp_bt.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_av1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_av1dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_avcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_avcdec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_avcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_avcenc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_common.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_deintl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_deintl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_h263dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_h263dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_h263enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_h263enc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_hevcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_hevcdec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_hevcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_hevcenc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_imaadpcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_imaadpcm.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec_L1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec_L1.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec_L2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec_L2.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3enc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mpeg4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mpeg4dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mpeg4enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mpeg4enc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_store.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_vp8dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_vp8dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_vp9dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_vp9dec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libdav1d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdav1d.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdts-eagle-shared.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtsdsec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libeng_tok.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeng_tok.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libengpc_adapt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengpc_adapt.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libengpcctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengpcctl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libfaceid_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfaceid_ca.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libfacepose.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfacepose.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libfactorylib_fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactorylib_fpc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libfactorylib_silead.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactorylib_silead.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libgesture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgesture.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libgnssmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnssmgt.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libimpl-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimpl-ril.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libiwnpi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiwnpi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libjpegenc_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegenc_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/liblcsagent.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcsagent.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/liblcscp.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcscp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/liblcsmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcsmgt.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/liblcswbxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcswbxml2.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/liblte.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblte.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libmapuser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmapuser.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediahdrtosdrtransform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libmemion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemion.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libnavcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnavcore.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libnpi_rtc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpi_rtc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_av1dec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_av1dec_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_vt_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_vt_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcenc_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_cabc_sw_sprd_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_cabc_sw_sprd_1.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_deintl_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_deintl_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcdec_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcdec_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcenc_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263dec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263dec_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263dec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263dec_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263enc_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263enc_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_mp3dec_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_mp3dec_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_mp3enc_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_mp3enc_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vp9dec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vp9dec_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxdec_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxdec_sw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxenc_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libpowerhal_cli.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal_cli.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libril-private.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-private.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/librilcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilcore.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/librpmbclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmbclient.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsecrpmbdata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecrpmbdata.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsecrpmbdata_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecrpmbdata_platform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsensorlistcfg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistcfg.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsensornpi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensornpi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemcompat.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemutil.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsoter_trusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoter_trusty.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprd_fcell_ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprd_fcell_ss.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprd_omx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprd_omx_core.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohal@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohal@7.0.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohal_deathhandlerv7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohal_deathhandlerv7.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohalv7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohalv7.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsprdfaceid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdfaceid.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_hdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_hdcp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_soft_mjpgdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mjpgdec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsupl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsupl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libswresample-3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswresample-3.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libswscale-5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswscale-5.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libsysoffloadstream.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysoffloadstream.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteec.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libteecPlatform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteecPlatform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libteeproduction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeproduction.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtinycompress_unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtracedump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtracedump.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtrancamJsonConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrancamJsonConvertor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtrancam_filelockmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrancam_filelockmgr.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrusty.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libtrustyHalHelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustyHalHelper.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libturboctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libturboctl_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libunisocpreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunisocpreprocessing.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libvideo_share_memory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideo_share_memory.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libvirtrpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvirtrpmb.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libvsp_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvsp_ca.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libwcn-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwcn-vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/libwvaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvaidl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/PQTune.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/PQTune.ums9230.so \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/autotestfinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/autotestfinger.so \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/autotestotg.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/autotestotg.so \
@@ -4290,160 +4302,35 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/libwifieut.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/libwifieut.so \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/libylogtopc.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/libylogtopc.so \
     vendor/infinix/X6528/proprietary/vendor/lib/npidevice/nativemmifinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/npidevice/nativemmifinger.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V2-ndk_platform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/arm.graphics-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V3-ndk.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audioclient-types-aidl-cpp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/av-types-aidl-cpp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/framework-permission-aidl-cpp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libAlgoServiceAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlgoServiceAdapter.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libGLES_mali_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLES_mali_cl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1 \
-    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.1 \
-    vendor/infinix/X6528/proprietary/vendor/lib/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so.1.2 \
-    vendor/infinix/X6528/proprietary/vendor/lib/libWhite_point_shift.so:$(TARGET_COPY_OUT_VENDOR)/lib/libWhite_point_shift.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/lib_crypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_crypto.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/lib_hdr10plus_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_hdr10plus_tm.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/lib_hsv_rgb_conv.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_hsv_rgb_conv.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libavcodec-58.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavcodec-58.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libavutil-56.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavutil-56.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libbqbbt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbqbbt.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libbt-sprd_suite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-sprd_suite.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libbt-ssp_bt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-ssp_bt.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_av1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_av1dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_avcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_avcdec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_avcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_avcenc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_deintl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_deintl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_h263dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_h263dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_h263enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_h263enc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_hevcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_hevcdec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_hevcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_hevcenc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_imaadpcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_imaadpcm.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec_L1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec_L1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3dec_L2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3dec_L2.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mp3enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mp3enc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mpeg4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mpeg4dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_mpeg4enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_mpeg4enc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_vp8dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_vp8dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libcodec2_unisoc_vp9dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_unisoc_vp9dec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libdav1d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdav1d.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtsdsec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libeng_tok.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeng_tok.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libengpc_adapt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengpc_adapt.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libengpcctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengpcctl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libfaceid_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfaceid_ca.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libfacepose.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfacepose.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libfactorylib_fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactorylib_fpc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libfactorylib_silead.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactorylib_silead.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libgesture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgesture.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libgnssmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnssmgt.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libimpl-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimpl-ril.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libiwnpi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiwnpi.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libjpegenc_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegenc_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/liblcsagent.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcsagent.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/liblcscp.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcscp.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/liblcsmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcsmgt.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/liblcswbxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblcswbxml2.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/liblte.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblte.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libmapuser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmapuser.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libnavcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnavcore.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libnpi_rtc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpi_rtc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_av1dec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_av1dec_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcdec_vt_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcdec_vt_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_avcenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_avcenc_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_cabc_sw_sprd_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_cabc_sw_sprd_1.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_deintl_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_deintl_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcdec_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcdec_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_hevcenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_hevcenc_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263dec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263dec_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263dec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263dec_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_m4vh263enc_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_m4vh263enc_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_mp3dec_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_mp3dec_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_mp3enc_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_mp3enc_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vp9dec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vp9dec_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxdec_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxdec_sw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libomx_vpxenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_vpxenc_hw_sprd.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libril-private.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-private.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/librpmbclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmbclient.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsecrpmbdata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecrpmbdata.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsecrpmbdata_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecrpmbdata_platform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsensornpi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensornpi.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemcompat.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemutil.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsoter_trusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoter_trusty.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprd_fcell_ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprd_fcell_ss.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprd_omx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprd_omx_core.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohal@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohal@7.0.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprdaudiohal_deathhandlerv7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdaudiohal_deathhandlerv7.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsprdfaceid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsprdfaceid.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libsupl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsupl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libswresample-3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswresample-3.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libswscale-5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswscale-5.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteec.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libteecPlatform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteecPlatform.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libteeproduction.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeproduction.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtracedump.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtracedump.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtrancamJsonConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrancamJsonConvertor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtrancam_filelockmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrancam_filelockmgr.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libtrustyHalHelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustyHalHelper.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libturboctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libturboctl_vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libvideo_share_memory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideo_share_memory.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libvirtrpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvirtrpmb.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libvsp_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvsp_ca.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libwcn-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwcn-vendor.so \
-    vendor/infinix/X6528/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/infinix/X6528/proprietary/vendor/lib/oemlock_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/oemlock_ca.so \
     vendor/infinix/X6528/proprietary/vendor/lib/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/shared-file-region-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper2.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdtsaudio.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhapticgenerator.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/soundfx/libsprdvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsprdvoiceprocessing.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.algoservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.algoservice@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.boot@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.boot@1.2.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.connmgr@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.connmgr@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.cplog_svc-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.cplog_svc-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.enhance-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.enhance-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.gnss@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.thermal@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.thermal@2.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.trusty-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.trusty-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.trusty@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.trusty@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib/vendor.sprd.hardware.wcn@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.sprd.hardware.wcn@1.0.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/bootctrl.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bootctrl.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/dpu.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/dpu.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/enhance.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/enhance.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/face.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/face.default.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gsp.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gsp.unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/libfsm_sdg_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libfsm_sdg_hal.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/liblowi_wifihal.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/libwifi-hal-unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libwifi-hal-unisoc.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/unisoc.bootctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/unisoc.bootctrl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.algoservice@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.algoservice@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.trusty-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.trusty-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/PQTune.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/PQTune.ums9230.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/autotestwifi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/autotestwifi.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libFactoryRadioTest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libFactoryRadioTest.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libaudionpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libaudionpi.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libcalinv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libcalinv.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libcheckkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libcheckkeybox.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libgetuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libgetuid.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/liblcdnpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/liblcdnpi.so \
-    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libsoter_checkx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libsoter_checkx.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.power-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.data-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.ims-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.ims-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.messaging-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.network-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.sim-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib/vendor.unisoc.hardware.radio.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.unisoc.hardware.radio.voice-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/MemsicAlgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/MemsicAlgo.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/arm.graphics-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V2-ndk.so \
@@ -4451,8 +4338,53 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/arm.graphics-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V3-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audioclient-types-aidl-cpp.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/av-types-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.2-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.3-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.4-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-external-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.4-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.5-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.5-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl-sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/camera.device@3.6-external-impl-sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl-sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/cplog_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/cplog_common.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/framework-permission-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@7.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.1-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.broadcastradio@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.bluetooth.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.ums9230.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/bootctrl.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bootctrl.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/dpu.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/dpu.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/enhance.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/enhance.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/face.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/face.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/gsp.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gsp.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/hwcomposer.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/libfsm_sdg_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libfsm_sdg_hal.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/liblowi_wifihal.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/libwifi-hal-unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libwifi-hal-unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/thermal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/unisoc.bootctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/unisoc.bootctrl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.algoservice@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.algoservice@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.connmgr@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.gnss@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.thermal@2.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.trusty-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.trusty-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sprd.hardware.wcn@1.0-impl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/hw/vulkan.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.ums9230.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libAlgoServiceAdapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgoServiceAdapter.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libGLES_mali_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLES_mali_cl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
@@ -4460,24 +4392,34 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/libOpenCL.so.1.1:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.1 \
     vendor/infinix/X6528/proprietary/vendor/lib64/libOpenCL.so.1.2:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so.1.2 \
     vendor/infinix/X6528/proprietary/vendor/lib64/libWhite_point_shift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libWhite_point_shift.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_android_keymaster_keymint_utils.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/lib_crypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_crypto.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/lib_hdr10plus_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_hdr10plus_tm.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/lib_hsv_rgb_conv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_hsv_rgb_conv.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libaiactiver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiactiver.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libaiactiver_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiactiver_core.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_shot.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libatci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libatci.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libavcodec-58.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavcodec-58.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libavutil-56.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavutil-56.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libbt-sprd_suite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-sprd_suite.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libbt-ssp_bt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-ssp_bt.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_common.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_deintl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_deintl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_imaadpcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_imaadpcm.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libcodec2_unisoc_store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_unisoc_store.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libdav1d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdav1d.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libdlrmsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlrmsc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtsdsec.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libefuse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libefuse.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libeng_tok.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeng_tok.so \
@@ -4488,12 +4430,16 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/libgesture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgesture.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libgnssmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnssmgt.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libimageClassify.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageClassify.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libimpl-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimpl-ril.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libiwnpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiwnpi.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libjpeg_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg_hw_sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libjpegenc_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegenc_sw_sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libkernelbootcp.trusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkernelbootcp.trusty.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libkeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymint.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/liblcsagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblcsagent.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/liblcscp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblcscp.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/liblcsmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblcsmgt.so \
@@ -4501,6 +4447,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/libliom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libliom.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/liblte.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblte.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libmapuser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmapuser.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediahdrtosdrtransform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libmemion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemion.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libminizip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminizip.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libmorpho_HDSR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_HDSR.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libnavcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnavcore.so \
@@ -4522,44 +4471,74 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/libomx_vpxdec_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libomx_vpxdec_hw_sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libomx_vpxdec_sw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libomx_vpxdec_sw_sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libomx_vpxenc_hw_sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libomx_vpxenc_hw_sprd.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libpowerhal_cli.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal_cli.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libril-private.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-private.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/librilcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilcore.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/librpmbclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmbclient.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsecrpmbdata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecrpmbdata.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsecrpmbdata_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecrpmbdata_platform.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libsensorlistcfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistcfg.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsensornpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensornpi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemcompat.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemutil.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoft_attestation_cert.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsoter_trusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoter_trusty.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsprd_fcell_ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprd_fcell_ss.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsprd_omx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprd_omx_core.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsprdaudiohal@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprdaudiohal@7.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsprdaudiohal_deathhandlerv7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprdaudiohal_deathhandlerv7.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libsprdaudiohalv7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprdaudiohalv7.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsprdfaceid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsprdfaceid.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefright_hdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_hdcp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libsupl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsupl.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libswresample-3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswresample-3.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libswscale-5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswscale-5.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libsysoffloadstream.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysoffloadstream.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteec.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libteecPlatform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecPlatform.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libteeproduction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeproduction.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libtinycompress_unisoc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_unisoc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtneclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtneclient.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtnev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtnev.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtrancamJsonConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancamJsonConvertor.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtrancam_filelockmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancam_filelockmgr.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrusty.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libtrustyHalHelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustyHalHelper.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libturboctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libturboctl_vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libvideo_share_memory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideo_share_memory.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libvirtrpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvirtrpmb.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libvsp_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvsp_ca.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libwcn-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwcn-vendor.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/PQTune.ums9230.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/PQTune.ums9230.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/autotestwifi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/autotestwifi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libFactoryRadioTest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libFactoryRadioTest.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libaudionpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libaudionpi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libcalinv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libcalinv.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libcheckkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libcheckkeybox.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libgetuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libgetuid.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/liblcdnpi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/liblcdnpi.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/npidevice/libsoter_checkx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/npidevice/libsoter_checkx.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/oemlock_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/oemlock_ca.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/power.sprd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/power.sprd.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/shared-file-region-aidl-cpp.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper2.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libdtsaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdtsaudio.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhapticgenerator.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.silead.hardware.fingerprintext@1.0-adapter-helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.silead.hardware.fingerprintext@1.0-adapter-helper.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.silead.hardware.fingerprintext@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.algoservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.algoservice@1.0.so \
@@ -4567,6 +4546,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.connmgr@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.connmgr@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.cplog_svc-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.cplog_svc-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.cplog_svc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.cplog_svc@1.0.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.enhance-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.enhance-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.face-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.face-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.fingerprintmmi-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.fingerprintmmi-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.sprd.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sprd.hardware.gnss@1.0.so \
@@ -4585,6 +4565,15 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlog@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so \
     vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.ai_engine-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.ai_engine-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.power-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.data-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.ims-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.ims-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.messaging-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.network-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.sim-V1-ndk.so \
+    vendor/infinix/X6528/proprietary/vendor/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.unisoc.hardware.radio.voice-V1-ndk.so \
     vendor/infinix/X6528/proprietary/vendor/media/engtest_sample.pcm:$(TARGET_COPY_OUT_VENDOR)/media/engtest_sample.pcm \
     vendor/infinix/X6528/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
     vendor/infinix/X6528/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
@@ -4596,88 +4585,50 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6528/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
     vendor/infinix/X6528/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
-# NOTE: 0 blob(s) with unrecognized partition prefixes were skipped:
-#   (none)
-
 PRODUCT_PACKAGES += \
+    LogManager \
+    Manual \
+    ProxyNFwLocation \
+    UASetting \
+    SoterService \
+    ims \
+    com.fingerprints.extension \
     ai_engine-default \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service \
-    android.hardware.audio@7.1-impl \
     android.hardware.biometrics.fingerprint@2.1-service \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1-service.unisoc \
-    android.hardware.broadcastradio@1.0-impl \
-    android.hardware.camera.provider@2.4-service \
     android.hardware.cas@1.2-service \
     android.hardware.drm-service.clearkey \
     android.hardware.gatekeeper@1.0-service.trusty \
-    android.hardware.graphics.composer@2.4-service \
     android.hardware.health-service.example \
-    android.hardware.media.c2@1.1-unisoc-service \
-    android.hardware.neuralnetworks@1.3-service-armnn-gpu \
-    android.hardware.power.stats-service.example \
-    android.hardware.renderscript@1.0-impl \
     android.hardware.security.keymint@2.0-unisoc.service.trusty \
     android.hardware.sensors-multihal \
-    android.hardware.sensors-service.multihal \
     android.hardware.thermal@2.0-service \
     android.hardware.usb-service.example \
     android.hardware.wifi.hostapd \
     android.hardware.wifi.supplicant \
     android.hardware.wifi@1.0-service \
-    audio.bluetooth.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    audioclient-types-aidl-cpp.vendor \
-    av-types-aidl-cpp.vendor \
     bluetooth_audio \
-    bootctrl.default \
-    camera.device@1.0-impl \
     cplog_svc-default \
     enhance-default \
     face-default \
-    framework-permission-aidl-cpp.vendor \
     hdcp-default \
-    hostapd \
-    libalsautils \
-    libaudioclient_aidl_conversion.vendor \
-    libaudiofoundation.vendor \
-    libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
-    libcamera2ndk_vendor \
-    libmediautils_vendor.vendor \
-    libsensorndkbridge \
-    libsfplugin_ccodec_utils.vendor \
-    libshmemcompat.vendor \
-    libshmemutil.vendor \
-    libstagefright_bufferpool@2.0.1.vendor \
-    libtinyxml \
-    libtrusty.vendor \
     lights \
     manifest_android.hardware.drm-service.widevine \
     manifest_dualsim \
-    manifest_kernel \
     manifest_media_c2_V1_1_unisoc \
     manifest_tneengine \
     memtrack \
     network-default \
     power.stats-default \
     rebootescrow-default \
-    rkp_factory_extraction_tool \
-    shared-file-region-aidl-cpp.vendor \
     soter_default \
-    thermal.default \
     trusty-default \
-    urild \
     vendor-fingerprintmmi-default \
     vendor-log-default \
     vendor-oemlock-default \
     vendor-power-default \
     vendor.sprd.hardware.boot@1.2 \
-    vendor.sprd.hardware.broadcastradio@2.0-service \
     vendor.sprd.hardware.gnss@2.2-service \
     vendor.sprd.hardware.thermal@2.0-service \
     vendor.sprd.hardware.tranHwInfo@1.0 \
     vibrator \
-    wpa_supplicant
+    manifest_kernel

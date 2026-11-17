@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho HDSR Parameters Configuration -->
+<!-- Copyright(c) 2020 Morpho China,Inc.  -->
+
+<hdsr>
+    <params>
+        <camera_id     type="int"   length="1">0</camera_id>
+        <format        type="int"   length="1">48</format>
+        <width   	   type="int"   length="1">4080</width>
+        <height  	   type="int"   length="1">3060</height>
+        <stride  	   type="int"   length="1">4080</stride>
+        <output_width  type="int"   length="1">4080</output_width>
+        <output_height type="int"   length="1">3060</output_height>
+        <num_input     type="int"   length="1">10</num_input>
+        <exposure_time type="int"   length="10">30000000 30000000 30000000 30000000 30000000 30000000 30000000 30000000 30000000 30000000 </exposure_time>
+        <iso 		   type="int"   length="10">100 100 100 100 100 100 100 100 100 100</iso>
+        <base_image    type="int"   length="10">0 0 0 0 0 0 0 0 0 0 </base_image>
+        <face_info     type="int"   length="4">0 0 0 0</face_info>
+        <zoom_ratio    type="float" length="1">0</zoom_ratio>
+        <zoom_rect     type="int"   length="4">1014 763 2053 1546</zoom_rect>
+		<params_cfg_iso  type="int" length="1">800</params_cfg_iso>
+		<params_cfg_file type="string" length="1">/data/local/tmp/morpho_hdsr/morpho_hdsr_tuning_params.xml</params_cfg_file>
+    </params>
+</hdsr>

@@ -1,0 +1,13 @@
+on boot
+    chown system system /sys/devices/platform/fingerprint@fpc/irq
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/irq
+    chown system system /sys/devices/platform/fingerprint@fpc/wakeup_enable
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/wakeup_enable
+    chown system system /sys/devices/platform/fingerprint@fpc/hw_reset
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/hw_reset
+    chown system system /sys/devices/platform/fingerprint@fpc/sensor
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/sensor
+    chown system system /sys/devices/platform/fingerprint@fpc/hwinfo
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/hwinfo
+    chown system system /sys/devices/platform/fingerprint@fpc/screen
+    chmod 0660 /sys/devices/platform/fingerprint@fpc/screen
