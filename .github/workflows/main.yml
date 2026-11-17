@@ -1,0 +1,199 @@
+name: Publish X6528 vendor tree to repository root
+
+# Publishes android_vendor_infinix_X6528-lineage-20.zip so that its files land
+# DIRECTLY at the root of a branch INSIDE THIS SAME REPOSITORY (the repo that
+# contains this workflow), with no android_vendor_infinix_X6528-lineage-20/
+# wrapper folder.
+#
+# The workflow creates/resets the target branch from the repository default
+# branch, then commits the tree there. The default branch is left untouched.
+#
+# This archive contains makefiles only (Android.bp / Android.mk /
+# BoardConfigVendor.mk / X6528-vendor.mk). Proprietary blobs are NOT included
+# and must be supplied separately at build time.
+#
+# Pixeldrain is supported: paste either the share link
+#   https://pixeldrain.com/u/<ID>
+# or the API link
+#   https://pixeldrain.com/api/file/<ID>
+# into zip_url, or paste only the <ID> into pixeldrain_id. Both are normalized
+# to the direct API URL before downloading.
+#
+# Two ways to trigger:
+#   1) workflow_dispatch -> zip_url (any direct URL, including Pixeldrain)
+#      or pixeldrain_id (just the file ID)
+#   2) publishing a Release in this repo -> the matching .zip asset is used
+#      automatically.
+
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'Direct URL to the zip (Release asset or Pixeldrain /u/<ID> or /api/file/<ID>)'
+        required: false
+        type: string
+      pixeldrain_id:
+        description: 'Optional: paste only the Pixeldrain file ID instead of zip_url'
+        required: false
+        type: string
+      target_branch:
+        description: 'Branch to CREATE/UPDATE inside this same repository, then fill with the tree'
+        required: true
+        default: 'lineage-20'
+        type: string
+      commit_message:
+        description: 'Commit message'
+        required: false
+        default: 'chore: sync X6528 vendor tree'
+        type: string
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-vendor-tree
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create publish branch in this repository
+        shell: bash
+        env:
+          PUBLISH_BRANCH: ${{ inputs.target_branch || 'lineage-20' }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin '+refs/heads/*:refs/remotes/origin/*'
+          DEFAULT_BRANCH="${{ github.event.repository.default_branch }}"
+          echo "Creating/resetting branch '$PUBLISH_BRANCH' from origin/$DEFAULT_BRANCH"
+          git checkout -B "$PUBLISH_BRANCH" "origin/$DEFAULT_BRANCH"
+          echo "PUBLISH_BRANCH=$PUBLISH_BRANCH" >> "$GITHUB_ENV"
+
+      - name: Resolve zip URL (supports Pixeldrain)
+        id: src
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_ZIP_URL: ${{ inputs.zip_url || '' }}
+          INPUT_PIXELDRAIN_ID: ${{ inputs.pixeldrain_id || '' }}
+        run: |
+          set -euo pipefail
+
+          if [[ -n "$INPUT_PIXELDRAIN_ID" ]]; then
+            PID="$INPUT_PIXELDRAIN_ID"
+            if [[ "$PID" == http* ]]; then
+              URL="$PID"
+            else
+              URL="https://pixeldrain.com/api/file/$PID"
+            fi
+          elif [[ -n "$INPUT_ZIP_URL" ]]; then
+            URL="$INPUT_ZIP_URL"
+          else
+            URL=$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" \
+              --jq '.assets[]
+                    | select(.name | test("^android_vendor_infinix_X6528-lineage-20.*\\.zip$"))
+                    | .browser_download_url' | head -n 1 || true)
+          fi
+
+          if [[ -z "$URL" ]]; then
+            echo "::error::No zip_url, no pixeldrain_id, and no matching Release asset was found."
+            exit 1
+          fi
+
+          # Normalize Pixeldrain share/API links to the direct API endpoint.
+          if [[ "$URL" =~ ^https?://(www\.)?pixeldrain\.com/u/([A-Za-z0-9_-]+) ]]; then
+            URL="https://pixeldrain.com/api/file/${BASH_REMATCH[2]}"
+          elif [[ "$URL" =~ ^https?://(www\.)?pixeldrain\.com/api/file/([A-Za-z0-9_-]+) ]]; then
+            URL="https://pixeldrain.com/api/file/${BASH_REMATCH[2]}"
+          fi
+
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Resolved source: $URL"
+
+      - name: Download archive
+        shell: bash
+        env:
+          DOWNLOAD_URL: ${{ steps.src.outputs.url }}
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 --retry-delay 5 --connect-timeout 30 \
+            --user-agent "Mozilla/5.0 (compatible; X6528-tree-publisher/1.0)" \
+            -H "Accept: application/zip,application/octet-stream,*/*" \
+            -o /tmp/tree.zip "$DOWNLOAD_URL"
+          echo "Downloaded $(stat -c%s /tmp/tree.zip) bytes"
+
+          # Pixeldrain can return an HTML error page with HTTP 200; fail early.
+          if ! unzip -tq /tmp/tree.zip >/dev/null 2>&1; then
+            echo "::error::Downloaded file is not a valid zip. First bytes:"
+            head -c 300 /tmp/tree.zip 2>/dev/null || true
+            echo
+            exit 1
+          fi
+          echo "Zip integrity OK"
+
+      - name: Extract and flatten wrapper folder
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/tree-extracted
+          mkdir -p /tmp/tree-extracted
+          unzip -q /tmp/tree.zip -d /tmp/tree-extracted
+
+          # If the archive has exactly one top-level directory, move its
+          # contents up one level so files sit at the archive root.
+          count=$(find /tmp/tree-extracted -mindepth 1 -maxdepth 1 | wc -l)
+          if [[ "$count" -eq 1 ]]; then
+            only=$(find /tmp/tree-extracted -mindepth 1 -maxdepth 1)
+            if [[ -d "$only" ]]; then
+              shopt -s dotglob
+              mv "$only"/* /tmp/tree-extracted/
+              shopt -u dotglob
+              rmdir "$only"
+            fi
+          fi
+
+          # Sanity guards: must not be empty and must not still be wrapped.
+          find /tmp/tree-extracted -mindepth 1 | grep -q . \
+            || { echo "::error::Archive is empty"; exit 1; }
+          if [[ -d /tmp/tree-extracted/android_vendor_infinix_X6528-lineage-20 ]]; then
+            echo "::error::Wrapper folder still present after flattening"
+            exit 1
+          fi
+          [[ -f /tmp/tree-extracted/X6528-vendor.mk ]] \
+            || { echo "::error::X6528-vendor.mk not found at archive root"; exit 1; }
+          echo "Flattened root contains:"
+          find /tmp/tree-extracted -mindepth 1 -maxdepth 1 -printf '  %f\n' | sort
+
+      - name: Replace repository contents (keep .git and .github)
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name '.github' -exec rm -rf {} +
+          cp -a /tmp/tree-extracted/. ./
+          echo "Root now contains:"
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' -printf '  %f\n' | sort
+
+      - name: Commit tree into the branch and push to this same repository
+        shell: bash
+        env:
+          COMMIT_MESSAGE: "${{ inputs.commit_message || 'chore: sync X6528 vendor tree from release asset' }}"
+        run: |
+          set -euo pipefail
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish into '$PUBLISH_BRANCH'."
+            exit 0
+          fi
+          git commit -m "$COMMIT_MESSAGE"
+          git push --force-with-lease origin "HEAD:$PUBLISH_BRANCH"
+          echo "Published tree to branch '$PUBLISH_BRANCH' of ${GITHUB_REPOSITORY}"
