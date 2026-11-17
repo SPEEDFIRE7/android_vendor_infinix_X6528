@@ -26,7 +26,7 @@ permissions:
 
 jobs:
   vendor:
-    runs-on: ubuntu-24.04   # change to your Namespace runner label if you prefer
+    runs-on: namespace-profile-speed   # change to your Namespace runner label if you prefer
     timeout-minutes: 240
     env:
       DUMP_URL: ${{ inputs.dump_url }}
