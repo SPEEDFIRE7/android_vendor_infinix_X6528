@@ -14,7 +14,7 @@ on:
 
 jobs:
   upload-vendor:
-    runs-on: namespace-profile-speed
+    runs-on: ubuntu-latest
     timeout-minutes: 120
 
     steps:
@@ -30,11 +30,6 @@ jobs:
           repository: SPEEDFIRE7/android_vendor_infinix_X6528
           path: vendor_output
 
-      - name: List downloaded files
-        run: |
-          ls -lh vendor_output/
-          du -sh vendor_output/
-
       - name: Install pigz
         run: sudo apt-get install -y pigz
 
@@ -49,16 +44,31 @@ jobs:
           SIZE=$(stat -c%s vendor_blobs.tar.gz)
           MAX=$((2000 * 1024 * 1024))
           if [ "$SIZE" -gt "$MAX" ]; then
-            echo "Splitting into 2GB parts..."
             split -b 2000m vendor_blobs.tar.gz vendor_blobs.tar.gz.part_
             rm vendor_blobs.tar.gz
           fi
           ls -lh vendor_blobs*
 
-      - name: Create GitHub Release
+      - name: Delete existing release and tag if exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          TAG="${{ github.event.inputs.tag }}"
+          if gh release view "$TAG" &>/dev/null; then
+            echo "Deleting existing release: $TAG"
+            gh release delete "$TAG" --yes --cleanup-tag
+          else
+            echo "No existing release for tag: $TAG"
+          fi
+
+      - name: Create release and upload files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ github.event.inputs.tag }}"
           TOTAL=$(du -sh vendor_output/ | cut -f1)
-          gh release create "${{ github.event.inputs.tag }}" \
+
+          gh release create "$TAG" vendor_blobs* \
             --title "${{ github.event.inputs.release_name }}" \
             --notes "## Vendor Blobs — Infinix Hot 40i (X6528)
 
@@ -72,17 +82,3 @@ jobs:
 
           > If split into parts:
           > \`cat vendor_blobs.tar.gz.part_* > vendor_blobs.tar.gz && tar xzf vendor_blobs.tar.gz\`"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload vendor files to release
-        run: |
-          for FILE in vendor_blobs*; do
-            if [ -f "$FILE" ]; then
-              echo "Uploading: $FILE ($(du -sh $FILE | cut -f1))"
-              gh release upload "${{ github.event.inputs.tag }}" "$FILE" --clobber
-              echo "✓ Done: $FILE"
-            fi
-          done
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
