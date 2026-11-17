@@ -14,7 +14,7 @@ on:
 
 jobs:
   upload-vendor:
-    runs-on: ubuntu-latest
+    runs-on: namespace-profile-speed
     timeout-minutes: 120
 
     steps:
