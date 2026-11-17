@@ -30,4 +30,59 @@ jobs:
           repository: SPEEDFIRE7/android_vendor_infinix_X6528
           path: vendor_output
 
-      - name: List downloaded
+      - name: List downloaded files
+        run: |
+          ls -lh vendor_output/
+          du -sh vendor_output/
+
+      - name: Install pigz
+        run: sudo apt-get install -y pigz
+
+      - name: Pack vendor with pigz
+        run: |
+          cd vendor_output
+          tar -I pigz -cf ../vendor_blobs.tar.gz .
+          ls -lh ../vendor_blobs.tar.gz
+
+      - name: Split if larger than 2GB
+        run: |
+          SIZE=$(stat -c%s vendor_blobs.tar.gz)
+          MAX=$((2000 * 1024 * 1024))
+          if [ "$SIZE" -gt "$MAX" ]; then
+            echo "Splitting into 2GB parts..."
+            split -b 2000m vendor_blobs.tar.gz vendor_blobs.tar.gz.part_
+            rm vendor_blobs.tar.gz
+          fi
+          ls -lh vendor_blobs*
+
+      - name: Create GitHub Release
+        run: |
+          TOTAL=$(du -sh vendor_output/ | cut -f1)
+          gh release create "${{ github.event.inputs.tag }}" \
+            --title "${{ github.event.inputs.release_name }}" \
+            --notes "## Vendor Blobs — Infinix Hot 40i (X6528)
+
+          - **Chipset**: Unisoc T606
+          - **Size**: ${TOTAL}
+          - **Source**: Extracted from device dump
+          - **Build**: Generated via IOSPTDGEN
+
+          ### Usage
+          Extract to \`vendor/infinix/X6528/\` in your AOSP tree.
+
+          > If split into parts:
+          > \`cat vendor_blobs.tar.gz.part_* > vendor_blobs.tar.gz && tar xzf vendor_blobs.tar.gz\`"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload vendor files to release
+        run: |
+          for FILE in vendor_blobs*; do
+            if [ -f "$FILE" ]; then
+              echo "Uploading: $FILE ($(du -sh $FILE | cut -f1))"
+              gh release upload "${{ github.event.inputs.tag }}" "$FILE" --clobber
+              echo "✓ Done: $FILE"
+            fi
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
