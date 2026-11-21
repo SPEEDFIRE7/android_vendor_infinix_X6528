@@ -1,8 +1,0 @@
-#X-turbo
-service turbopower /vendor/bin/turbopower
-    class main
-    user system
-    group system readproc wifi media media_rw camera audio
-
-on boot
-    start turbopower
